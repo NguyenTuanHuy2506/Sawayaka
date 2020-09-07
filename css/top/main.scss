@@ -1,0 +1,438 @@
+@charset "UTF-8";
+@import '../functions_responsive.scss';
+@import '../assets/variables.scss';
+
+/**
+ * font family
+ * font-family: 'Roboto', sans-serif;
+ * font-family: 'Vollkorn', serif;
+ */
+
+%main-color {
+    color: #92c96a;
+}
+
+%font-default {
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+}
+
+%font-color {
+    color: #555;
+}
+
+%letter-spacing-default {
+    letter-spacing: .3rem;
+}
+
+%font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+%font-Vollkorn {
+    font-family: 'Vollkorn', serif;
+}
+
+%font-weight-400 {
+    font-weight: 400;
+}
+
+%font-weight-500 {
+    font-weight: 500;
+}
+
+%font-weight-700 {
+    font-weight: 700;
+}
+
+.f-comma {
+    display: inline-block;
+    max-width: 1rem;
+}
+
+@mixin onIE() {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
+
+/**
+ * ---------------------------------
+ * common css
+ */
+.heading {
+    @extend %font-Vollkorn;
+    @extend %main-color;
+    font-size: 8.2rem;
+    font-style: italic;
+    letter-spacing: .9rem;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    line-height: 70px;
+    z-index: 25;
+
+    &-sub {
+        @extend %font-default;
+        font-size: 2.4rem;
+        @extend %font-weight-700;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        transform: translateY(2.5rem);
+        @include onIE{
+          transform: translateY(3rem);
+        }
+        font-style: normal;
+        @extend %font-color;
+    }
+}
+
+.btn {
+    outline: none !important;
+    background-color: transparent;
+    border: 0;
+    display: table;
+
+    &:hover {
+        opacity: .75;
+    }
+
+    &.btn--radius {
+        height: 6rem;
+        width: 100%;
+        max-width: 24rem;
+        background-color: #fff;
+        color: #71bb48;
+        font-size: 1.6rem;
+        border-radius: 3rem;
+        @extend %font-weight-500;
+
+        @include onIE {
+            padding-top: .8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.nav--link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/**
+ * end common css
+ * 
+ */
+
+/**
+ * ---------------------------------
+ * mv area
+ */
+.mv {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        width: 110vw;
+        height: 10vw;
+        position: absolute;
+        background-color: #f4f4f2;
+        bottom: -15%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    &__slick {
+        width: 100%;
+
+        li,
+        li>img {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        position: absolute;
+        bottom: 11vw;
+        left: calc(240px + (100vw - 1600px) / 2);
+        // transform: translateY(-50%);
+
+        .mv__content {
+            color: #555;
+            @extend %font-weight-500;
+            font-size: 2.8rem;
+            @extend %letter-spacing-default;
+            background-color: #fff;
+            padding: .4rem 1.5rem;
+            line-height: 64px;
+
+            @include onIE {
+                padding: .4rem 1.5rem 0 1.5rem;
+            }
+        }
+    }
+}
+
+/**
+ * about area
+ */
+.about {
+    width: 100%;
+    background-color: #f4f4f2;
+    padding-top: 8rem;
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        position: relative;
+        top: -3.5rem;
+        margin-bottom: 15rem;
+
+        li {
+            width: 100%;
+
+        }
+    }
+
+    &__img {
+        max-width: calc(100% - 46.875%);
+        border-radius: 2rem;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        max-width: 46.875%;
+        padding: 12rem 6rem 0 4rem;
+        position: relative;
+
+        h3 {
+            font-size: 2.4rem;
+            @extend %font-color;
+            @extend %font-weight-700;
+            @extend %letter-spacing-default;
+            margin-bottom: 6rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            @extend %font-weight-500;
+            @extend %font-color;
+            line-height: 30px;
+        }
+
+        .btn {
+            position: absolute;
+            left: 4rem;
+            bottom: 0;
+            transform: translateY(80%);
+        }
+    }
+}
+
+
+/**
+ * menu area
+ * --------------------------------------------
+ */
+.menu {
+    width: 100%;
+    background-color: #edefea;
+    padding: 8rem 0;
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 4rem;
+
+        li {
+            width: 100%;
+            max-width: 17rem;
+
+        }
+    }
+
+    &__item {
+        div {
+            position: relative;
+            width: 17rem;
+            height: 17rem;
+            background-color: #fff;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h5 {
+                font-size: 1.6rem;
+                margin-top: 2.5rem;
+                @extend %font-color;
+                @extend %font-weight-700;
+            }
+        }
+
+        p {
+            font-size: 1.4rem;
+            letter-spacing: .1rem;
+            margin-top: 2rem;
+            @extend %font-weight-500;
+            @extend %font-color;
+        }
+    }
+
+    .btn {
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+}
+
+/**
+ * second menu
+ */
+.nd-menu {
+    width: 100%;
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        margin: 5rem 0;
+        justify-content: space-between;
+
+        li {
+            width: 100%;
+            max-width: calc(50% - 10px);
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                position: absolute;
+                color: #71bb48;
+                font-style: italic;
+                font-size: 2rem;
+                left: 6rem;
+                @extend %font-Vollkorn;
+                top: 50%;
+                transform: translateY(-50%);
+
+                span {
+                    display: block;
+                    @extend %font-default;
+                    @extend %font-color;
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    @extend %font-weight-700;
+                }
+            }
+        }
+    }
+}
+
+
+/**
+ * equip area
+ */
+.equip{
+    width: 100%;
+    overflow: hidden;
+
+    &__inner{
+        width: 120%;
+        position: relative;
+        transform: translateX(-10%);
+    }
+
+    &-slick{
+        width: 100%;
+        li{
+            width: 100%;
+            border-radius: 2rem;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/**
+ * news area
+ * -------------------------------
+ */
+
+.news{
+    width: 100%;
+    background-color: #f4f4f2;
+
+    &__inner{
+        width: 100%;
+        padding: 0 6rem;
+       
+
+        li{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            padding: 1.9rem 1rem;
+            border-bottom: .1rem solid #ccc;
+                &::after{
+                content: '';
+                display: inline-block;
+                width: 3.3rem;
+                height: .7rem;
+                position: absolute;
+                top: 50%;
+                right: 2rem;
+                border-bottom: .1rem solid #555;
+                border-right: .2rem solid #555;
+                transform: translateY(-50%) skew(45deg);
+            }
+        }
+    }
+
+    &__date{
+        @extend %font-roboto;
+        font-size: 1.4rem;
+        @extend %font-color;
+        @extend %font-weight-500;
+    }
+    &__category{
+        color: #71bb48;
+        font-size: 1.4rem;
+        margin-left: 2.5rem;
+    }
+    &__content{
+        font-size: 1.4rem;
+        margin-left: 2.5rem;
+        @extend %font-weight-500;
+        @extend %font-color;
+    }
+
+    .btn{
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+}
