@@ -95,7 +95,9 @@
   outline: none !important;
   background-color: transparent;
   border: 0;
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn:hover {
   opacity: 0.75;
