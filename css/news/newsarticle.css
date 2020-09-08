@@ -1,5 +1,10 @@
 body {
-  background-color: #f6f6f4; }
+  background-color: #f6f6f4;
+  font-size: 1.4rem; }
+
+@font-face {
+  font-family: "HiRaKaKu Pro";
+  src: url(../../assets/fonts/hirakakupro-w6-opentype_bigfontsite.com.otf); }
 
 p {
   letter-spacing: 2px; }
@@ -63,14 +68,23 @@ p {
           width: 1px;
           margin-right: 7px; }
     .block-2 .block-content .content-2 ol.number {
-      margin: 28px 0; }
+      list-style: none;
+      margin: 28px 0;
+      counter-reset: my-awesome-counter; }
       .block-2 .block-content .content-2 ol.number li {
+        counter-increment: my-awesome-counter;
         margin: 6px 0; }
+        .block-2 .block-content .content-2 ol.number li:before {
+          content: counter(my-awesome-counter) ". ";
+          color: #71bb48;
+          font-weight: bold; }
     .block-2 .block-content .content-2 .h-1 {
+      font-family: "HiRaKaKu Pro";
       font-size: 1.8rem;
       color: #1f1f1f;
       font-weight: bold; }
     .block-2 .block-content .content-2 .h-2 {
+      font-family: "HiRaKaKu Pro";
       font-size: 1.6rem;
       color: #1f1f1f;
       font-weight: bold; }

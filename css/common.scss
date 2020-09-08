@@ -14,32 +14,15 @@ a {
   }
 }
 body {
-<<<<<<< HEAD
   font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
     "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN",
     "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
-  color: #555555;
+  font-size: 62.5%;
+  color: #555;
   @media screen and (max-width: 768px) {
     font-size: 1.4rem;
   }
-  @media screen and (max-width: 768px) {
-    padding: 0;
-  }
 }
-body > main {
-  -ms-overflow-x: hidden;
-}
-=======
-    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
-    font-size: 62.5%;
-    color: #555;
-    @media screen and (max-width: 768px) {
-        font-size: 1.4rem;
-    }
-}
-
->>>>>>> 19b89c006217299ff92ccf8a14d7d19512f3baef
-
 @supports (-ms-ime-align: auto) {
   body > main {
     overflow: hidden;
@@ -109,7 +92,7 @@ header {
   }
 }
 .top-title {
-  margin-top: 150px;
+  margin-top: 140px;
   margin-bottom: 60px;
   .title {
     color: #b6d69e;
@@ -133,6 +116,7 @@ header {
       padding: 0 15px;
       a {
         color: #d7d7d6;
+        font-size: 1.2rem;
       }
       a.active {
         color: #555555;
@@ -206,15 +190,18 @@ footer {
     color: #71bb48;
     font-style: italic;
     font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
   }
   .address {
     margin-top: 35px;
     display: block;
     margin-bottom: 10px;
+    font-size: 1.4rem;
   }
   .fax {
     display: block;
     margin-bottom: 48px;
+    font-size: 1.4rem;
   }
   .access {
     width: 240px;
@@ -238,6 +225,7 @@ footer {
       font-weight: bold;
       margin-top: 20px;
       display: block;
+      font-size: 1.6rem;
     }
     .block {
       .table-footer {
@@ -286,6 +274,9 @@ footer {
       }
       .describe {
         margin-top: 24px;
+        span {
+          font-size: 1.4rem;
+        }
         .green {
           margin-right: 25px;
         }
@@ -308,6 +299,7 @@ footer {
             letter-spacing: -1px;
             right: -19px;
             top: -18%;
+            font-size: 1.4rem;
           }
         }
       }
@@ -344,6 +336,9 @@ footer {
     .main-content {
       display: flex;
       justify-content: space-between;
+      span{
+        font-size: 1.4rem;
+      }
     }
   }
 }
@@ -355,7 +350,7 @@ footer {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #eff2ed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -498,6 +493,7 @@ footer {
   footer {
     .phone {
       font-size: 3.2rem;
+      letter-spacing: 0;
     }
     .footer-content-main {
       .main-table {
@@ -505,12 +501,20 @@ footer {
         overflow-x: auto;
         margin: auto;
       }
+      .block{
+        .describe{
+          span{
+            font-size: 1.3rem;
+          }
+        }
+      }
     }
     .footer-info {
       .main-content {
         flex-wrap: wrap;
         span {
-          padding: 10px 0;
+          padding: 5px 0;
+          line-height: 25px;
         }
       }
     }

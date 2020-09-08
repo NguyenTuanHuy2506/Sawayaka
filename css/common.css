@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-<<<<<<< HEAD
   padding: 0;
   margin: 0; }
 
@@ -12,16 +11,11 @@ a {
 
 body {
   font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
-  color: #555555; }
+  font-size: 62.5%;
+  color: #555; }
   @media screen and (max-width: 768px) {
     body {
       font-size: 1.4rem; } }
-  @media screen and (max-width: 768px) {
-    body {
-      padding: 0; } }
-
-body > main {
-  -ms-overflow-x: hidden; }
 
 @supports (-ms-ime-align: auto) {
   body > main {
@@ -73,7 +67,7 @@ header {
       color: white; }
 
 .top-title {
-  margin-top: 150px;
+  margin-top: 140px;
   margin-bottom: 60px; }
   .top-title .title {
     color: #b6d69e;
@@ -93,7 +87,8 @@ header {
     display: inline-block;
     padding: 0 15px; }
     .top-title .break-cumb-title li a {
-      color: #d7d7d6; }
+      color: #d7d7d6;
+      font-size: 1.2rem; }
     .top-title .break-cumb-title li a.active {
       color: #555555; }
   .top-title .break-cumb-title .center {
@@ -154,16 +149,19 @@ footer .phone {
   font-size: 4.2rem;
   color: #71bb48;
   font-style: italic;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px; }
 
 footer .address {
   margin-top: 35px;
   display: block;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 1.4rem; }
 
 footer .fax {
   display: block;
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  font-size: 1.4rem; }
 
 footer .access {
   width: 240px;
@@ -186,7 +184,8 @@ footer .footer-content-main {
   footer .footer-content-main .daily {
     font-weight: bold;
     margin-top: 20px;
-    display: block; }
+    display: block;
+    font-size: 1.6rem; }
   footer .footer-content-main .block .table-footer {
     margin-top: 18px;
     width: 550px;
@@ -224,6 +223,8 @@ footer .footer-content-main {
       height: 60px; }
   footer .footer-content-main .block .describe {
     margin-top: 24px; }
+    footer .footer-content-main .block .describe span {
+      font-size: 1.4rem; }
     footer .footer-content-main .block .describe .green {
       margin-right: 25px; }
     footer .footer-content-main .block .describe .details {
@@ -243,7 +244,8 @@ footer .footer-content-main {
         position: absolute;
         letter-spacing: -1px;
         right: -19px;
-        top: -18%; }
+        top: -18%;
+        font-size: 1.4rem; }
 
 footer .footer-link {
   display: flex;
@@ -272,6 +274,8 @@ footer .footer-info {
   footer .footer-info .main-content {
     display: flex;
     justify-content: space-between; }
+    footer .footer-info .main-content span {
+      font-size: 1.4rem; }
 
 #backTop {
   cursor: pointer;
@@ -281,7 +285,7 @@ footer .footer-info {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #eff2ed;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -378,44 +382,22 @@ footer .footer-info {
     font-size: 1.8rem;
     margin-left: -10px; }
   footer .phone {
-    font-size: 3.2rem; }
+    font-size: 3.2rem;
+    letter-spacing: 0; }
   footer .footer-content-main .main-table {
     width: 280px;
     overflow-x: auto;
     margin: auto; }
+  footer .footer-content-main .block .describe span {
+    font-size: 1.3rem; }
   footer .footer-info .main-content {
     flex-wrap: wrap; }
     footer .footer-info .main-content span {
-      padding: 10px 0; }
+      padding: 5px 0;
+      line-height: 25px; }
   footer .logo-footer .details {
     padding-left: 10px; }
   footer .logo-footer img {
     width: 56px; }
   footer .logo-footer .big {
     font-size: 1.8rem; } }
-=======
-}
-
-body {
-  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
-  font-size: 62.5%;
-  color: #555;
-}
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 1.4rem;
-  }
-}
-
-body > main {
-  -ms-overflow-x: hidden;
-}
-
-@supports (-ms-ime-align: auto) {
-  body > main {
-    overflow: hidden;
-  }
-}
-
-/*# sourceMappingURL=common.css.map */
->>>>>>> 19b89c006217299ff92ccf8a14d7d19512f3baef
