@@ -1,15 +1,8 @@
-@charset "UTF-8";
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px; }
-
 html {
   font-size: 10px;
   line-height: 1; }
   html a {
     outline: none !important;
-    text-decoration: none;
     color: inherit; }
 
 img {
@@ -22,10 +15,7 @@ button {
   font-size: inherit !important; }
 
 body {
-  color: #555555;
-  font-size: 1.6rem;
-  font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
-  font-weight: 400; }
+  font-size: 1.6rem; }
   @media screen and (max-width: 768px) {
     body {
       font-size: 1.4rem; } }
@@ -131,9 +121,6 @@ body {
 
 .m-au-0 {
   margin: auto 0px; }
-
-.top-title .break-cumb-title .center {
-  border-right: none; }
 
 .fold1 {
   margin-bottom: 90px; }
