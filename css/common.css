@@ -12,7 +12,7 @@ a {
 body {
   font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
   font-size: 62.5%;
-  color: #555; }
+  color: #555555; }
   @media screen and (max-width: 768px) {
     body {
       font-size: 1.4rem; } }
@@ -53,8 +53,9 @@ header {
       margin-left: 40px; }
       header .menu-header .main-menu-header li a {
         font-size: 1.4rem;
-        color: #555555; }
-      header .menu-header .main-menu-header li .green-header {
+        color: #555555;
+        font-weight: bold; }
+      header .menu-header .main-menu-header li .active {
         color: #71bb48; }
     header .menu-header .main-menu-header .contact a {
       border-radius: 40px;
@@ -64,7 +65,8 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white; }
+      color: white;
+      font-weight: 500; }
 
 .top-title {
   margin-top: 140px;
@@ -75,14 +77,16 @@ header {
     font-size: 8.2rem;
     text-align: center;
     font-style: italic;
-    margin: 32px 0 33px 0; }
+    margin: 32px 0 33px 0;
+    letter-spacing: 8px; }
     .top-title .title span {
       font-style: normal;
       margin-top: -32px;
       color: #555555;
       font-size: 2.4rem;
       font-weight: bold;
-      display: block; }
+      display: block;
+      letter-spacing: 2px; }
   .top-title .break-cumb-title li {
     display: inline-block;
     padding: 0 15px; }
@@ -128,8 +132,6 @@ footer .logo-footer {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 45px; }
-  footer .logo-footer img {
-    width: 74px; }
   footer .logo-footer .details {
     padding-left: 20px; }
   footer .logo-footer .small {
@@ -254,6 +256,7 @@ footer .footer-link {
   footer .footer-link .content {
     position: relative; }
     footer .footer-link .content img {
+      max-width: 360px;
       width: 100%;
       border-radius: 10px; }
     footer .footer-link .content span {
@@ -360,8 +363,12 @@ footer .footer-info {
     transform: rotate(135deg); }
   header .menu-burger {
     display: block; }
-  .break-cumb-title {
-    margin: 20px 0; }
+  .top-title {
+    margin-bottom: 30px; }
+    .top-title .break-cumb-title {
+      margin: 20px 0; }
+      .top-title .break-cumb-title li {
+        margin: 6px 0; }
   footer .footer-content-main {
     flex-wrap: wrap;
     justify-content: center; }
@@ -397,7 +404,5 @@ footer .footer-info {
       line-height: 25px; }
   footer .logo-footer .details {
     padding-left: 10px; }
-  footer .logo-footer img {
-    width: 56px; }
   footer .logo-footer .big {
     font-size: 1.8rem; } }

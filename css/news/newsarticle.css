@@ -99,9 +99,13 @@ p {
     padding: 0 20px; }
   .block-1 .block-content {
     flex-wrap: wrap; }
+    .block-1 .block-content .title {
+      line-height: 25px; }
     .block-1 .block-content .content-1,
     .block-1 .block-content .content-2 {
       max-width: 100%; }
       .block-1 .block-content .content-1 .text,
       .block-1 .block-content .content-2 .text {
-        font-size: 1.3rem; } }
+        font-size: 1.3rem; }
+  .block-2 .block-content .content-2 .quote p {
+    font-size: 1.2rem; } }

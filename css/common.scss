@@ -18,7 +18,7 @@ body {
     "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN",
     "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
   font-size: 62.5%;
-  color: #555;
+  color: #555555;
   @media screen and (max-width: 768px) {
     font-size: 1.4rem;
   }
@@ -71,8 +71,9 @@ header {
         a {
           font-size: 1.4rem;
           color: #555555;
+          font-weight: bold;
         }
-        .green-header {
+        .active {
           color: #71bb48;
         }
       }
@@ -86,6 +87,7 @@ header {
           justify-content: center;
           align-items: center;
           color: white;
+          font-weight: 500;
         }
       }
     }
@@ -101,6 +103,7 @@ header {
     text-align: center;
     font-style: italic;
     margin: 32px 0 33px 0;
+    letter-spacing: 8px;
     span {
       font-style: normal;
       margin-top: -32px;
@@ -108,6 +111,7 @@ header {
       font-size: 2.4rem;
       font-weight: bold;
       display: block;
+      letter-spacing: 2px;
     }
   }
   .break-cumb-title {
@@ -164,9 +168,6 @@ footer {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 45px;
-    img {
-      width: 74px;
-    }
     .details {
       padding-left: 20px;
     }
@@ -312,6 +313,7 @@ footer {
     .content {
       position: relative;
       img {
+        max-width: 360px;
         width: 100%;
         border-radius: 10px;
       }
@@ -336,7 +338,7 @@ footer {
     .main-content {
       display: flex;
       justify-content: space-between;
-      span{
+      span {
         font-size: 1.4rem;
       }
     }
@@ -453,9 +455,16 @@ footer {
       // margin-right: 20px;
     }
   }
-  .break-cumb-title {
-    margin: 20px 0;
+  .top-title {
+    margin-bottom: 30px;
+    .break-cumb-title {
+      margin: 20px 0;
+      li {
+        margin: 6px 0;
+      }
+    }
   }
+
   footer {
     .footer-content-main {
       flex-wrap: wrap;
@@ -501,9 +510,9 @@ footer {
         overflow-x: auto;
         margin: auto;
       }
-      .block{
-        .describe{
-          span{
+      .block {
+        .describe {
+          span {
             font-size: 1.3rem;
           }
         }
@@ -521,9 +530,6 @@ footer {
     .logo-footer {
       .details {
         padding-left: 10px;
-      }
-      img {
-        width: 56px;
       }
       .big {
         font-size: 1.8rem;
