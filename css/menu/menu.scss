@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+/**
+ * font family
+ * font-family: 'Roboto', sans-serif;
+ * font-family: 'Vollkorn', serif;
+ */
+
+@mixin ipadpro {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin onIE() {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
+
+%main-color {
+    color: #92c96a;
+}
+
+%font-default {
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+}
+
+%font-color {
+    color: #555;
+}
+
+%letter-spacing-default {
+    letter-spacing: .3rem;
+}
+
+%font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+%font-Vollkorn {
+    font-family: 'Vollkorn', serif;
+}
+
+%font-weight-400 {
+    font-weight: 400;
+}
+
+%font-weight-500 {
+    font-weight: 500;
+}
+
+%font-weight-700 {
+    font-weight: 700;
+}
+
+%transition-default {
+    transition: all .3s ease;
+}
+
+/**
+ * ---------------------------------
+ * common css
+ */
+
+.nav--link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn {
+    outline: none !important;
+    background-color: transparent;
+    border: 0;
+    display: table;
+    @extend %transition-default;
+
+    &:hover {
+        opacity: .75;
+    }
+
+    &.btn--radius {
+        height: 6rem;
+        width: 100%;
+        max-width: 24rem;
+        background-color: #fff;
+        color: #71bb48;
+        font-size: 1.6rem;
+        border-radius: 3rem;
+        @extend %letter-spacing-default;
+        @extend %font-weight-500;
+
+        @include onIE {
+            padding-top: .8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+/**
+ * menu area
+ */
+.menu{
+    width: 100%;
+
+    &__title{
+        @extend %font-weight-700;
+        @extend %font-color;
+        font-size: 2rem;
+        display: table;
+        margin: 0 auto;
+    }
+
+    &__inner{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include mobile{
+            padding: 0 2rem;
+        }
+
+        li{
+            width: 100%;
+            max-width: calc((100% / 3) - 27px);
+            margin-top: 6rem;
+
+            @include mobile{
+                max-width: 100%;
+            }
+
+
+        }
+    }
+}
+
+.mbox{
+    display: flex;
+    flex-direction: column;
+
+    &__item{
+        width: 100%;
+        position: relative;
+        margin-bottom: 5rem;
+
+        div{
+            position: absolute;
+            width: 12rem;
+            height: 12rem;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 35%);
+            @extend %transition-default;
+            &:hover{
+                opacity: .75;
+            }
+        }
+    }
+
+    &__img{
+        width: 100%;
+        border-radius: 2rem;
+    }
+
+    h5{
+        @extend %font-weight-700;
+        @extend %font-color;
+        font-size: 1.6rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    p{
+        @extend %font-weight-500;
+        @extend %font-color;
+        font-size: 1.4rem;
+        letter-spacing: .1rem;
+        margin-top: 1rem;
+    }
+
+    .btn{
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+}
+
+/**
+ * second menu
+ */
+.nd-menu {
+    width: 100%;
+    background-color: #f4f4f2;
+
+    &__inner {
+        width: 100%;
+        display: inline-flex;
+        margin: 5.5rem 0;
+        justify-content: space-between;
+        @include mobile{
+            flex-wrap: wrap;
+            margin: 0;
+        }
+
+        li {
+            width: 100%;
+            max-width: calc(50% - 10px);
+            position: relative;
+            @extend %transition-default;
+
+            @include mobile{
+                max-width: 100%;
+                margin-top: 3rem;
+                height: 20rem;
+            }
+
+            &:hover {
+                opacity: .75;
+            }
+
+            img {
+                width: 100%;
+                @include mobile{
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 70%;
+                }
+            }
+
+            h3 {
+                position: absolute;
+                color: #71bb48;
+                font-style: italic;
+                font-size: 2rem;
+                left: 6rem;
+                @extend %font-Vollkorn;
+                top: 50%;
+                transform: translateY(-50%);
+                @include mobile{
+                    left: 6.25vw;
+                }
+
+                span {
+                    display: block;
+                    @extend %font-default;
+                    @extend %font-color;
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    @extend %font-weight-700;
+                }
+            }
+        }
+    }
+}
