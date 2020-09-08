@@ -118,6 +118,7 @@ header {
     li {
       display: inline-block;
       padding: 0 15px;
+      border-right: 1px solid #d7d7d6;
       a {
         color: #d7d7d6;
         font-size: 1.2rem;
@@ -126,9 +127,8 @@ header {
         color: #555555;
       }
     }
-    .center {
-      border-left: 1px solid #d7d7d6;
-      border-right: 1px solid #d7d7d6;
+    li:last-of-type {
+      border-color: transparent;
     }
   }
 }

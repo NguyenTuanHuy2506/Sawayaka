@@ -89,15 +89,15 @@ header {
       letter-spacing: 2px; }
   .top-title .break-cumb-title li {
     display: inline-block;
-    padding: 0 15px; }
+    padding: 0 15px;
+    border-right: 1px solid #d7d7d6; }
     .top-title .break-cumb-title li a {
       color: #d7d7d6;
       font-size: 1.2rem; }
     .top-title .break-cumb-title li a.active {
       color: #555555; }
-  .top-title .break-cumb-title .center {
-    border-left: 1px solid #d7d7d6;
-    border-right: 1px solid #d7d7d6; }
+  .top-title .break-cumb-title li:last-of-type {
+    border-color: transparent; }
 
 footer .green {
   display: inline-block;
