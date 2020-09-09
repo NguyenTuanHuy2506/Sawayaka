@@ -50,6 +50,7 @@ header {
     align-items: center;
     margin: auto;
     width: 100%;
+    flex-wrap: wrap;
   }
   .menu-burger {
     display: none;
@@ -74,8 +75,16 @@ header {
           font-size: 1.4rem;
           color: #555555;
           font-weight: bold;
+          padding: 20px 0;
         }
         .active {
+          color: #71bb48;
+        }
+      }
+      li.phone {
+        display: none;
+        .number {
+          font-size: 1.4rem;
           color: #71bb48;
         }
       }
@@ -90,6 +99,39 @@ header {
           align-items: center;
           color: white;
           font-weight: 500;
+          padding: 20px 0;
+        }
+      }
+      .dropdown-menu {
+        position: relative;
+        .dropdown-ul {
+          position: absolute;
+          width: 175px;
+          height: 280px;
+          background-color: rgba(255, 255, 255, 0.8);
+          top: 30px;
+          left: -100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          display: none;
+          li {
+            padding: 12px;
+            margin-left: 0;
+            display: block;
+            text-align: center;
+            &:hover {
+              a {
+                color: #71bb48;
+              }
+            }
+          }
+        }
+        &:hover {
+          .dropdown-ul {
+            display: flex;
+          }
         }
       }
     }
@@ -224,6 +266,7 @@ footer {
   .footer-content-main {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .daily {
       font-weight: bold;
       margin-top: 20px;
@@ -350,7 +393,7 @@ footer {
   cursor: pointer;
   position: fixed;
   right: 60px;
-  bottom: 50%;
+  bottom: 60px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -358,6 +401,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s;
   span {
     transform: rotate(45deg);
     display: block;
@@ -366,9 +410,13 @@ footer {
     border-top: 3px solid #71bb48;
     border-left: 3px solid #71bb48;
     margin-top: 20px;
+    transition: all 0.5s;
   }
   &:hover {
-    opacity: 0.8;
+    background-color: #71bb48;
+    span {
+      border-color: white;
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -388,7 +436,7 @@ footer {
       padding: 0 20px;
     }
     .header-content {
-      padding: 20px 0;
+      padding: 5px 0;
     }
     .menu-header {
       position: fixed;
@@ -407,10 +455,25 @@ footer {
         display: block;
         li {
           display: block;
-          margin: 20px auto;
+          margin: 30px auto;
           text-align: center;
           a {
             text-align: center;
+          }
+        }
+        li.contact {
+          a {
+            margin: auto;
+          }
+        }
+        li.phone {
+          display: block;
+        }
+        .dropdown-menu {
+          &:hover {
+            .dropdown-ul {
+              display: none;
+            }
           }
         }
       }
@@ -502,6 +565,9 @@ footer {
     }
   }
   footer {
+    .address {
+      line-height: 25px;
+    }
     .phone {
       font-size: 3.2rem;
       letter-spacing: 0;
@@ -532,6 +598,9 @@ footer {
     .logo-footer {
       .details {
         padding-left: 10px;
+      }
+      .small {
+        line-height: 25px;
       }
       .big {
         font-size: 1.8rem;
