@@ -21,6 +21,7 @@
 	<link href="assets/plugins/slick/slick-theme.css" rel="stylesheet">
 	
 	<!-- build:addcss -->
+	<link href="assets/css/myanimate.css" rel="stylesheet">
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/top/main.css" rel="stylesheet">
 
@@ -30,20 +31,116 @@
 </head>
 <body>
 	<header>
-	<!-- build:header -->
+		<!-- build:header -->
+		<div class="container">
+			<div class="header-content">
+				<div class="logo">
+					<h1>
+						<a href="index.html">
+							<img src="images/common/icon-sawayaka_logo.png" alt="さわやか歯科クリニック">
+							<span>さわやか歯科クリニック</span>
+						</a>
+					</h1>
+				</div>
+				<div class="menu-header">
+					<ul class="main-menu-header">
+						<li>
+							<a href="about/index.html">
+								クリニック紹介
+							</a>
+						</li>
+						<li class="dropdown-menu">
+                            <a href="menu/index.html" class="active">
+                                診療案内
+                            </a>
+                            <div class="dropdown-ul">
+                                <ul class=drop-ul>
+                                    <li>
+                                        <a href="implant/index.html">
+                                            インプラント
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="cosmetic/index.html">
+                                            審美歯科
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="denture/index.html">
+                                            義歯
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="periodontal/index.html">
+                                            歯周治療
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="remediation/index.html">
+                                            矯正
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="prevention/index.html">
+                                            予防歯科
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+						<li>
+							<a href="staff/index.html">
+								スタッフ紹介
+							</a>
+						</li>
+						<li>
+							<a href="access/index.html">
+								アクセス
+							</a>
+						</li>
+						<li class="contact">
+							<a href="#link">
+								お問い合わせ
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-burger">
+					<div class="menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</header>
 	<main>
 	<!-- build:content -->
 		<!-- mv area -->
 		<section class="mv">
 
-			<ul class="mv__slick">
+			<ul class="mv__slick js-mv-slick">
+
 				<li>
-					<img src="images/top/img_top_banner.jpg" alt="患者さまとのコミュニケーション、インフォームドコンセントを徹底し、ハイクオリティーな治療">
+					<img src="images/top/img_top_banner_01.jpg" alt="患者さまとのコミュニケーション、インフォームドコンセントを徹底し、ハイクオリティーな治療">
 				</li>
+				<li>
+					<img src="images/top/img_top_banner_02.jpg" alt="患者さまとのコミュニケーション、インフォームドコンセントを徹底し、ハイクオリティーな治療">
+				</li>
+				<li>
+					<img src="images/top/img_top_banner_03.jpg" alt="患者さまとのコミュニケーション、インフォームドコンセントを徹底し、ハイクオリティーな治療">
+				</li>
+				<li>
+					<img src="images/top/img_top_banner_04.jpg" alt="患者さまとのコミュニケーション、インフォームドコンセントを徹底し、ハイクオリティーな治療">
+				</li>
+				<li>
+					<img src="images/top/img_top_banner_05.jpg" alt="患者さまとのコミュニケーション、インフォームドコンセントを徹底し、ハイクオリティーな治療">
+				</li>
+
 			</ul>
 
-			<h2>
+			<h2 class="wow fadeInLeft animated">
 				<span class="mv__content">患者さまとのコミュニケーション<span class="f-comma">、</span></span><br />
 				<span class="mv__content">インフォームドコンセントを徹底し<span class="f-comma">、</span></span><br />
 				<span class="mv__content">ハイクオリティーな治療</span>
@@ -55,14 +152,15 @@
 		<section class="about">
 
 			<div class="container">
-				<h2 class="heading">
+				<h2 class="heading wow fadeInLeft animated">
 					ABOUT
 				</h2>
 				<ul class="about__inner">
-					<li class="about__img">
+					<li class="about__img wow fadeInLeft animated">
 						<img src="images/top/img_about_banner.jpg" alt="さわやか歯科とは">
+						<a class="nav--link" href="about/index.html"></a>
 					</li>
-					<li class="about__content">
+					<li class="about__content wow fadeInRight">
 						<h3>さわやか歯科とは</h3>
 						<p>
 							ここにさわやか歯科の説明テキストが入ります。文字の大きさ、量、字間、行間等を確認するために入れています。
@@ -70,9 +168,9 @@
 						<p>
 							この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
 						</p>
-						<button class="btn btn--radius">
+						<a class="btn btn--radius" href="about/index.html">
 							クリニック紹介
-						</button>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -83,7 +181,7 @@
 			
 			<div class="container">
 
-				<h2 class="heading">
+				<h2 class="heading wow fadeInLeft animated">
 					MENU
 					<span class="heading-sub">
 						診療案内
@@ -91,66 +189,84 @@
 				</h2>
 
 				<ul class="menu__inner">
-					<li class="menu__item">
+					<li class="menu__item wow fadeInLeft animated">
+
 						<div>
-							<img src="images/top/icon_medical_01.jpg" alt="インプラント">
+							<img src="images/common/icon_medical_01.jpg" alt="インプラント">
 							<h5>インプラント</h5>
+							<a class="nav--link" href="implant/index.html"></a>
 						</div>
 						<p>
 							入れ歯やブリッジなど一般的な治療法に変わる最先端の治療法です。
 						</p>
+						
 					</li>
-					<li class="menu__item">
+					<li class="menu__item wow fadeInLeft animated" data-wow-delay='.1s'>
+
 						<div>
-							<img src="images/top/icon_medical_02.jpg" alt="審美歯科">
+							<img src="images/common/icon_medical_02.jpg" alt="審美歯科">
 							<h5>審美歯科</h5>
+							<a class="nav--link" href="cosmetic/index.html"></a>
 						</div>
 						<p>
 							ここに簡単な治療の説明テキストが入ります。
 						</p>
+						
 					</li>
-					<li class="menu__item">
+					<li class="menu__item wow fadeInLeft animated" data-wow-delay='.15s'>
+
 						<div>
-							<img src="images/top/icon_medical_03.jpg" alt="義歯">
+							<img src="images/common/icon_medical_03.jpg" alt="義歯">
 							<h5>義歯</h5>
+							<a class="nav--link" href="denture/index.html"></a>
 						</div>
 						<p>
 							ここに簡単な治療の説明テキストが入ります。
 						</p>
+						
 					</li>
-					<li class="menu__item">
+					<li class="menu__item wow fadeInLeft animated" data-wow-delay='.2s'>
+
 						<div>
-							<img src="images/top/icon_medical_04.jpg" alt="歯周治療">
+							<img src="images/common/icon_medical_04.jpg" alt="歯周治療">
 							<h5>歯周治療</h5>
+							<a class="nav--link" href="periodontal/index.html"></a>
 						</div>
 						<p>
 							ここに簡単な治療の説明テキストが入ります。
 						</p>
+						
 					</li>
-					<li class="menu__item">
+					<li class="menu__item wow fadeInLeft animated" data-wow-delay='.25s'>
+
 						<div>
-							<img src="images/top/icon_medical_05.jpg" alt="矯正">
+							<img src="images/common/icon_medical_05.jpg" alt="矯正">
 							<h5>矯正</h5>
+							<a class="nav--link" href="remediation/index.html"></a>
 						</div>
 						<p>
 							ここに簡単な治療の説明テキストが入ります。
 						</p>
+						
 					</li>
-					<li class="menu__item">
+					<li class="menu__item wow fadeInLeft animated" data-wow-delay='.3s'>
+
 						<div>
-							<img src="images/top/icon_medical_06.jpg" alt="予防歯科">
+							<img src="images/common/icon_medical_06.jpg" alt="予防歯科">
 							<h5>予防歯科</h5>
-							<a class="nav--link" href="#"></a>
+							<a class="nav--link" href="prevention/index.html"></a>
 						</div>
 						<p>
 							ここに簡単な治療の説明テキストが入ります。
 						</p>
+
 					</li>
 				</ul>
 
-				<button class="btn btn--radius">
+				<a class="btn btn--radius" href="about/index.html">
 					メニュー 一覧
-				</button>
+				</a>
+
 			</div>
 
 		</section>
@@ -159,75 +275,90 @@
 			<div class="container">
 				<ul class="nd-menu__inner">
 					<li>
-						<img src="images/top/img_menu_kid.jpg" alt="キッズメニューはこちら">
-						<h3>
+						<img src="images/common/img_menu_kid.jpg" alt="キッズメニューはこちら">
+						<h3 class="wow fadeInLeft animated">
 							for kids
 							<span>キッズメニューはこちら</span>
 						</h3>
-						<a class="nav--link" href="#"></a>
+						<a class="nav--link" href="kids/index.html"></a>
 					</li>
 					<li>
-						<img src="images/top/img_menu_senior.jpg" alt="シニアメニューはこちら">
-						<h3>
+						<img src="images/common/img_menu_senior.jpg" alt="シニアメニューはこちら">
+						<h3 class="wow fadeInRight animated">
 							for senior
 							<span>シニアメニューはこちら</span>
 						</h3>
-						<a class="nav--link" href="#"></a>
+						<a class="nav--link" href="senior/index.html"></a>
 					</li>
 				</ul>
 			</div>
-		</section>\
+		</section>
 
 		<!-- equipment -->
 		<section class="equip">
+
 			<div class="equip__inner">
+
 				<ul class="equip-slick js-equip-slick">
+
 					<li>
 						<img src="images/top/img_equip_01.jpg" alt="">
+						<h6>診療室</h6>
 					</li>
 					<li>
 						<img src="images/top/img_equip_02.jpg" alt="">
+						<h6>待合室</h6>
 					</li>
 					<li>
 						<img src="images/top/img_equip_03.jpg" alt="">
+						<h6>受付</h6>
 					</li>
 					<li>
 						<img src="images/top/img_equip_04.jpg" alt="">
+						<h6>お子様スペース</h6>
 					</li>
 					<li>
 						<img src="images/top/img_equip_01.jpg" alt="">
+						<h6>診療室</h6>
 					</li>
 					<li>
 						<img src="images/top/img_equip_02.jpg" alt="">
+						<h6>待合室</h6>
 					</li>
 					<li>
 						<img src="images/top/img_equip_03.jpg" alt="">
+						<h6>受付</h6>
 					</li>
 					<li>
 						<img src="images/top/img_equip_04.jpg" alt="">
+						<h6>お子様スペース</h6>
 					</li>
+
 				</ul>
+
 			</div>
+
 		</section>
 
 		<section class="news">
 			
 			<div class="container">
 
-				<h2 class="heading">
+				<h2 class="heading wow fadeInLeft animated">
 					NEWS
 					<span class="heading-sub">
 						お知らせ
 					</span>
 				</h2>
 
-				<ul class="news__inner">
+				<ul class="news__inner wow fadeInUp animated">
 
 					<li>
 
 						<p class="news__date">0000.00.00</p>
 						<p class="news__category">カテゴリ</p>
 						<p class="news__content">ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。</p>
+						<a class="nav--link" href="news/index.html"></a>
 						
 					</li>
 					<li>
@@ -235,6 +366,7 @@
 						<p class="news__date">0000.00.00</p>
 						<p class="news__category">カテゴリ</p>
 						<p class="news__content">ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。</p>
+						<a class="nav--link" href="news/index.html"></a>
 						
 					</li>
 					<li>
@@ -242,26 +374,151 @@
 						<p class="news__date">0000.00.00</p>
 						<p class="news__category">カテゴリ</p>
 						<p class="news__content">ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。</p>
+						<a class="nav--link" href="news/index.html"></a>
 						
 					</li>
 
 				</ul>
 
-				<button class="btn btn--radius">
+				<a class="btn btn--radius" href="about/index.html">
 					お知らせ一覧
-				</button>
+				</a>
 
 			</div>
 
 		</section>
 	</main>
 	<footer>
-	<!-- build:footer -->
+		<!-- build:footer -->
+		<div class="footer-content">
+			<div class="container">
+				<div class="footer-content-main">
+					<div class="block">
+						<div class="logo-footer">
+							<img src="images/common/icon-logo-footer.png" alt="">
+							<div class="details">
+								<span class="small">
+									歯科一般、小児歯科、矯正歯科、歯科口腔外科
+								</span>
+								<span class="big">さわやか歯科クリニック</span>
+							</div>
+						</div>
+						<span class="phone">045-791-7571</span>
+						<span class="reservation">（ご予約）</span>
+						<span class="address">
+							〒236-0005 神奈川県横浜市金沢区並木2-3-3-103
+						</span>
+						<span class="fax">FAX：045-791-7572
+						</span>
+						<a href="access/index.html" class="access">
+							アクセスマップ
+						</a>
+					</div>
+					<div class="block">
+						<span class="daily">診療時間・休診日</span>
+						<div class="main-table">
+							<table class="table-footer">
+								<tr>
+									<th></th>
+									<th>
+										<ul class="table-ul">
+											<li>月</li>
+											<li>火</li>
+											<li>水</li>
+											<li>木</li>
+											<li>金</li>
+											<li>土</li>
+											<li>日</li>
+										</ul>
+									</th>
+								</tr>
+								<tr>
+									<td>午前 9：00～1：00</td>
+									<td>
+										<ul class="table-ul">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><img src="images/common/icon-x.png" alt=""></li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>午後 3：00～7：00</td>
+									<td>
+										<ul class="table-ul">
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><img src="images/common/icon-triangle.png" alt=""></li>
+											<li><img src="images/common/icon-x.png" alt=""></li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="describe">
+							<div class="details">
+								<span class="green img"></span>
+								<span>診察</span>
+							</div>
+							<div class="details">
+								<div class="img">
+									<img src="images/common/icon-triangle.png" alt="">
+								</div>
+
+								<span>2：00～5：00まで診察（土曜日午後）</span>
+							</div>
+							<div class="details">
+								<div class="img">
+									<img src="images/common/icon-x.png" alt="">
+								</div>
+								<span>休診 （日曜、祝日）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="footer-link">
+				<a href="#link" class="content">
+					<img src="images/common/img_footer_01.png" alt="患者様の声">
+					<span class="wht">患者様の声</span>
+				</a>
+				<a href="#link" class="content">
+					<img src="images/common/img_footer_02.png" alt="コラム">
+					<span>コラム</span>
+				</a>
+				<a href="#" class="content">
+					<img src="images/common/img_footer_03.png" alt="症例紹介">
+					<span>症例紹介</span>
+				</a>
+			</div>
+		</div>
+		<div class="footer-info">
+			<div class="container">
+				<div class="main-content">
+					<span>Copyright(c) Sawayaka Dental Clinic. All right reserved.</span>
+					<span>サイトマップ</span>
+				</div>
+			</div>
+		</div>
 	</footer>
+	<div id="backTop">
+		<span class="backTop"></span>
+	</div>
 	<script src="assets/js/jquery-2.2.4.min.js"></script>
 	<script src="assets/js/fontawesome.min.js"></script>
 	<script src="assets/plugins/slick/slick.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/top.js"></script>
+	<script src="js/general.js"></script>
 	<!-- build:addJs -->
 </body>
 </html>
