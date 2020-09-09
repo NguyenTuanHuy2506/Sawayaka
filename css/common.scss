@@ -44,8 +44,20 @@ header.active {
     }
 }
 
+<<<<<<< HEAD
 header {
     position: fixed;
+=======
+
+  
+  .header-content {
+    transition: all 0.5s;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+>>>>>>> d15cd98436fdf3e797c760e92cbd4168aec62479
     width: 100%;
 <<<<<<< HEAD
     z-index: 888;
