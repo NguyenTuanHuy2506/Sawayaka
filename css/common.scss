@@ -54,7 +54,7 @@ header {
   width: 100%;
   z-index: 888;
   top: 0;
-  transition: all .5s;
+  transition: all 0.5s;
   .header-content {
     transition: all 0.5s;
     padding: 25px 0;
@@ -575,6 +575,15 @@ footer {
           font-size: 1.8rem;
           margin-left: -10px;
         }
+      }
+    }
+  }
+  .top-title {
+    .title {
+      font-size: 5rem;
+      span {
+        margin-top: -21px;
+        font-size: 1.8rem;
       }
     }
   }
