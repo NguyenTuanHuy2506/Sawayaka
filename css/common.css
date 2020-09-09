@@ -40,7 +40,8 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    width: 100%; }
+    width: 100%;
+    flex-wrap: wrap; }
   header .menu-burger {
     display: none; }
   header .logo h1 a {
@@ -56,8 +57,14 @@ header {
       header .menu-header .main-menu-header li a {
         font-size: 1.4rem;
         color: #555555;
-        font-weight: bold; }
+        font-weight: bold;
+        padding: 20px 0; }
       header .menu-header .main-menu-header li .active {
+        color: #71bb48; }
+    header .menu-header .main-menu-header li.phone {
+      display: none; }
+      header .menu-header .main-menu-header li.phone .number {
+        font-size: 1.4rem;
         color: #71bb48; }
     header .menu-header .main-menu-header .contact a {
       border-radius: 40px;
@@ -68,7 +75,31 @@ header {
       justify-content: center;
       align-items: center;
       color: white;
-      font-weight: 500; }
+      font-weight: 500;
+      padding: 20px 0; }
+    header .menu-header .main-menu-header .dropdown-menu {
+      position: relative; }
+      header .menu-header .main-menu-header .dropdown-menu .dropdown-ul {
+        position: absolute;
+        width: 175px;
+        height: 280px;
+        background-color: rgba(255, 255, 255, 0.8);
+        top: 30px;
+        left: -100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        display: none; }
+        header .menu-header .main-menu-header .dropdown-menu .dropdown-ul li {
+          padding: 12px;
+          margin-left: 0;
+          display: block;
+          text-align: center; }
+          header .menu-header .main-menu-header .dropdown-menu .dropdown-ul li:hover a {
+            color: #71bb48; }
+      header .menu-header .main-menu-header .dropdown-menu:hover .dropdown-ul {
+        display: flex; }
 
 .top-title {
   margin-top: 140px;
@@ -184,7 +215,8 @@ footer .footer-content {
 
 footer .footer-content-main {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
   footer .footer-content-main .daily {
     font-weight: bold;
     margin-top: 20px;
@@ -286,14 +318,15 @@ footer .footer-info {
   cursor: pointer;
   position: fixed;
   right: 60px;
-  bottom: 50%;
+  bottom: 60px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: #eff2ed;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transition: all 0.5s; }
   #backTop span {
     transform: rotate(45deg);
     display: block;
@@ -301,9 +334,12 @@ footer .footer-info {
     height: 30px;
     border-top: 3px solid #71bb48;
     border-left: 3px solid #71bb48;
-    margin-top: 20px; }
+    margin-top: 20px;
+    transition: all 0.5s; }
   #backTop:hover {
-    opacity: 0.8; }
+    background-color: #71bb48; }
+    #backTop:hover span {
+      border-color: white; }
 
 @media screen and (max-width: 768px) {
   #backTop {
@@ -318,7 +354,7 @@ footer .footer-info {
   header .container {
     padding: 0 20px; }
   header .header-content {
-    padding: 20px 0; }
+    padding: 5px 0; }
   header .menu-header {
     position: fixed;
     top: 0;
@@ -336,10 +372,16 @@ footer .footer-info {
       display: block; }
       header .menu-header .main-menu-header li {
         display: block;
-        margin: 20px auto;
+        margin: 30px auto;
         text-align: center; }
         header .menu-header .main-menu-header li a {
           text-align: center; }
+      header .menu-header .main-menu-header li.contact a {
+        margin: auto; }
+      header .menu-header .main-menu-header li.phone {
+        display: block; }
+      header .menu-header .main-menu-header .dropdown-menu:hover .dropdown-ul {
+        display: none; }
   header .menu-header.active {
     height: 100vh; }
   header .menu-burger .menu {
@@ -390,6 +432,8 @@ footer .footer-info {
   header .logo a span {
     font-size: 1.8rem;
     margin-left: -10px; }
+  footer .address {
+    line-height: 25px; }
   footer .phone {
     font-size: 3.2rem;
     letter-spacing: 0; }
@@ -406,5 +450,7 @@ footer .footer-info {
       line-height: 25px; }
   footer .logo-footer .details {
     padding-left: 10px; }
+  footer .logo-footer .small {
+    line-height: 25px; }
   footer .logo-footer .big {
     font-size: 1.8rem; } }
