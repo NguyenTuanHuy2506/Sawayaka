@@ -1,15 +1,8 @@
-@charset "UTF-8";
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px; }
-
 html {
   font-size: 10px;
   line-height: 1; }
   html a {
     outline: none !important;
-    text-decoration: none;
     color: inherit; }
 
 img {
@@ -22,10 +15,7 @@ button {
   font-size: inherit !important; }
 
 body {
-  color: #555555;
-  font-size: 1.6rem;
-  font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
-  font-weight: 400; }
+  font-size: 1.6rem; }
   @media screen and (max-width: 768px) {
     body {
       font-size: 1.4rem; } }
@@ -62,6 +52,58 @@ body {
   @media screen and (max-width: 768px) {
     .f-sample16 {
       font-size: 1.4rem; } }
+
+.hover-ef {
+  position: relative;
+  z-index: 0; }
+  .hover-ef::after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    top: 1px;
+    right: 1px;
+    background-image: linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0.3));
+    border-radius: 18px;
+    z-index: -1; }
+  .hover-ef.active::after {
+    background-image: linear-gradient(to bottom, #71bb48 80%, #629f40); }
+  .hover-ef span {
+    height: 36px;
+    min-height: 36px;
+    display: flex;
+    border-radius: inherit;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    border-radius: 18px;
+    transition: all 0.3s ease; }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      .hover-ef span {
+        padding-top: 3px; } }
+    .hover-ef span::after, .hover-ef span::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      border-radius: inherit;
+      transition: all 0.3s ease; }
+    .hover-ef span::after {
+      background-color: #71bb48;
+      z-index: -1;
+      opacity: 0;
+      transition: all 0.3s ease; }
+    .hover-ef span::before {
+      background-color: white;
+      z-index: -2;
+      opacity: 1; }
+  .hover-ef:hover span {
+    transform: translateY(-5px); }
 
 .font-b {
   font-weight: bold; }
@@ -145,7 +187,8 @@ body {
   .fold1-figure {
     position: relative;
     margin-right: 20px;
-    min-width: 350px; }
+    min-width: 350px;
+    border-radius: 20px; }
     @media screen and (max-width: 768px) {
       .fold1-figure {
         margin: 0px auto;
@@ -157,6 +200,8 @@ body {
       z-index: 1;
       max-width: 104px;
       width: 20.8%; }
+    .fold1-figure .img-staff {
+      border-radius: inherit; }
   .fold1-content {
     max-width: 560px;
     width: 100%; }
@@ -212,51 +257,55 @@ body {
   .fold2-li {
     line-height: 2; }
 
-@media screen and (max-width: 768px) {
-  .fold3-wrap {
-    flex-direction: column;
-    max-width: 540px;
-    margin: 0px auto; } }
-
-.fold3-ul {
-  max-width: 340px;
-  width: 100%; }
+.fold3 {
+  margin-bottom: 125px; }
   @media screen and (max-width: 768px) {
-    .fold3-ul {
-      max-width: 100%; } }
-  .fold3-ul:not(:last-of-type) {
-    margin-right: 20px; }
-    @media screen and (max-width: 768px) {
-      .fold3-ul:not(:last-of-type) {
-        margin-right: 0px;
-        margin-bottom: 25px; } }
+    .fold3 {
+      margin-bottom: 50px; } }
   @media screen and (max-width: 768px) {
-    .fold3-ul .li-figure {
-      display: table;
+    .fold3-wrap {
+      flex-direction: column;
+      max-width: 540px;
       margin: 0px auto; } }
-  .fold3-ul .li-content {
-    margin-bottom: 15px; }
+  .fold3-ul {
+    max-width: 340px;
+    width: 100%; }
     @media screen and (max-width: 768px) {
-      .fold3-ul .li-content {
-        margin-bottom: 10px; } }
-    .fold3-ul .li-content span {
-      display: block;
-      line-height: 1;
-      margin: 28px 0px 15px; }
+      .fold3-ul {
+        max-width: 100%; } }
+    .fold3-ul:not(:last-of-type) {
+      margin-right: 20px; }
       @media screen and (max-width: 768px) {
-        .fold3-ul .li-content span {
-          margin: 20px 0px 10px; } }
-    .fold3-ul .li-content p {
-      line-height: 1.8;
-      letter-spacing: 0.15rem; }
-  .fold3-ul .ul-list {
-    line-height: 1.8;
-    padding-top: 20px;
-    border-top: 1px solid #cccccc; }
+        .fold3-ul:not(:last-of-type) {
+          margin-right: 0px;
+          margin-bottom: 25px; } }
     @media screen and (max-width: 768px) {
-      .fold3-ul .ul-list {
-        padding-top: 10px; } }
-    .fold3-ul .ul-list li {
-      list-style-type: disc;
-      list-style-position: inside;
-      margin-left: 6px; }
+      .fold3-ul .li-figure {
+        display: table;
+        margin: 0px auto; } }
+    .fold3-ul .li-content {
+      margin-bottom: 15px; }
+      @media screen and (max-width: 768px) {
+        .fold3-ul .li-content {
+          margin-bottom: 10px; } }
+      .fold3-ul .li-content span {
+        display: block;
+        line-height: 1;
+        margin: 28px 0px 15px; }
+        @media screen and (max-width: 768px) {
+          .fold3-ul .li-content span {
+            margin: 20px 0px 10px; } }
+      .fold3-ul .li-content p {
+        line-height: 1.8;
+        letter-spacing: 0.15rem; }
+    .fold3-ul .ul-list {
+      line-height: 1.8;
+      padding-top: 20px;
+      border-top: 1px solid #cccccc; }
+      @media screen and (max-width: 768px) {
+        .fold3-ul .ul-list {
+          padding-top: 10px; } }
+      .fold3-ul .ul-list li {
+        list-style-type: disc;
+        list-style-position: inside;
+        margin-left: 6px; }
