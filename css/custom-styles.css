@@ -13,6 +13,9 @@ a, a:hover, a:visited, a:focus, a:active {
 @media screen and (max-width: 1023px) {
   .container {
     padding: 0 20px; } }
+.mgt-40 {
+  margin-top: 40px; }
+
 .title-center {
   text-align: center;
   font-size: 2rem;
@@ -115,6 +118,9 @@ a, a:hover, a:visited, a:focus, a:active {
         color: #555;
         font-size: 1.4rem;
         font-weight: bold; }
+    .two-block--trifurcate .two-block__child p {
+      line-height: 2;
+      margin-top: 20px; }
   .two-block--untitle {
     margin-top: 80px; }
     .two-block--untitle .two-block__child > figure {
