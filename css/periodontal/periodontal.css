@@ -25,8 +25,9 @@ h3 {
     color: #71bb48;
     font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 30px;
-    letter-spacing: 1px; }
+    margin-bottom: 22px;
+    letter-spacing: 1px;
+    line-height: 30px; }
   #block-1 .content .block-content {
     max-width: calc(50% - 35px);
     padding: 0 60px 0 40px; }

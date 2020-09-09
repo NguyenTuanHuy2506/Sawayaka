@@ -47,6 +47,7 @@ header.active {
 header {
     position: fixed;
     width: 100%;
+<<<<<<< HEAD
     z-index: 888;
     top: 0;
 
@@ -107,6 +108,90 @@ header {
                     font-weight: 500;
                 }
             }
+=======
+    flex-wrap: wrap;
+  }
+  .menu-burger {
+    display: none;
+  }
+  .logo {
+    h1 {
+      a {
+        font-weight: bold;
+        font-size: 2.4rem;
+        color: #555555;
+      }
+    }
+  }
+  .menu-header {
+    .main-menu-header {
+      display: flex;
+      align-items: center;
+      li {
+        display: inline-block;
+        margin-left: 40px;
+        a {
+          font-size: 1.4rem;
+          color: #555555;
+          font-weight: bold;
+          padding: 20px 0;
+        }
+        .active {
+          color: #71bb48;
+        }
+      }
+      li.phone {
+        display: none;
+        .number {
+          font-size: 1.4rem;
+          color: #71bb48;
+        }
+      }
+      .contact {
+        a {
+          border-radius: 40px;
+          width: 140px;
+          height: 36px;
+          background-color: #71bb48;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-weight: 500;
+          padding: 20px 0;
+        }
+      }
+      .dropdown-menu {
+        position: relative;
+        .dropdown-ul {
+          position: absolute;
+          width: 175px;
+          height: 280px;
+          background-color: rgba(255, 255, 255, 0.8);
+          top: 30px;
+          left: -100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          display: none;
+          li {
+            padding: 12px;
+            margin-left: 0;
+            display: block;
+            text-align: center;
+            &:hover {
+              a {
+                color: #71bb48;
+              }
+            }
+          }
+        }
+        &:hover {
+          .dropdown-ul {
+            display: flex;
+          }
+>>>>>>> 221781982b5b09ee9b0c180a83741d8cacb36092
         }
     }
 }
@@ -165,11 +250,61 @@ footer {
         border-radius: 50%;
         background-color: #71bb48;
     }
+<<<<<<< HEAD
 
     .triangle {
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-bottom: 8px solid #f8b751;
+=======
+  }
+  .reservation {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .phone {
+    font-size: 4.2rem;
+    color: #71bb48;
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+  }
+  .address {
+    margin-top: 35px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+  .fax {
+    display: block;
+    margin-bottom: 48px;
+    font-size: 1.4rem;
+  }
+  .access {
+    width: 240px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: white;
+    color: #71bb48;
+    font-size: 1.6rem;
+  }
+  .footer-content {
+    padding: 75px 0 60px 0;
+    background-color: #e9ece5;
+  }
+  .footer-content-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .daily {
+      font-weight: bold;
+      margin-top: 20px;
+      display: block;
+      font-size: 1.6rem;
+>>>>>>> 221781982b5b09ee9b0c180a83741d8cacb36092
     }
 
     .x {
@@ -235,11 +370,56 @@ footer {
         margin-bottom: 10px;
         font-size: 1.4rem;
     }
+<<<<<<< HEAD
 
     .fax {
         display: block;
         margin-bottom: 48px;
         font-size: 1.4rem;
+=======
+  }
+}
+#backTop {
+  cursor: pointer;
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #eff2ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  span {
+    transform: rotate(45deg);
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid #71bb48;
+    border-left: 3px solid #71bb48;
+    margin-top: 20px;
+    transition: all 0.5s;
+  }
+  &:hover {
+    background-color: #71bb48;
+    span {
+      border-color: white;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #backTop {
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 100px;
+    span {
+      margin-top: 8px;
+      width: 15px;
+      height: 15px;
+>>>>>>> 221781982b5b09ee9b0c180a83741d8cacb36092
     }
 
     .access {
@@ -253,6 +433,7 @@ footer {
         color: #71bb48;
         font-size: 1.6rem;
     }
+<<<<<<< HEAD
 
     .footer-content {
         padding: 75px 0 60px 0;
@@ -392,6 +573,50 @@ footer {
                 color: white;
             }
         }
+=======
+    .header-content {
+      padding: 5px 0;
+    }
+    .menu-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 0;
+      overflow: hidden;
+      width: 100vw;
+      transition: all 0.5s;
+      z-index: 999;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .main-menu-header {
+        display: block;
+        li {
+          display: block;
+          margin: 30px auto;
+          text-align: center;
+          a {
+            text-align: center;
+          }
+        }
+        li.contact {
+          a {
+            margin: auto;
+          }
+        }
+        li.phone {
+          display: block;
+        }
+        .dropdown-menu {
+          &:hover {
+            .dropdown-ul {
+              display: none;
+            }
+          }
+        }
+      }
+>>>>>>> 221781982b5b09ee9b0c180a83741d8cacb36092
     }
 
     .footer-info {
@@ -591,11 +816,34 @@ footer {
             }
         }
     }
+<<<<<<< HEAD
 
     footer {
         .phone {
             font-size: 3.2rem;
             letter-spacing: 0;
+=======
+  }
+  footer {
+    .address {
+      line-height: 25px;
+    }
+    .phone {
+      font-size: 3.2rem;
+      letter-spacing: 0;
+    }
+    .footer-content-main {
+      .main-table {
+        width: 280px;
+        overflow-x: auto;
+        margin: auto;
+      }
+      .block {
+        .describe {
+          span {
+            font-size: 1.3rem;
+          }
+>>>>>>> 221781982b5b09ee9b0c180a83741d8cacb36092
         }
 
         .footer-content-main {
@@ -634,5 +882,20 @@ footer {
                 font-size: 1.8rem;
             }
         }
+<<<<<<< HEAD
+=======
+      }
+    }
+    .logo-footer {
+      .details {
+        padding-left: 10px;
+      }
+      .small {
+        line-height: 25px;
+      }
+      .big {
+        font-size: 1.8rem;
+      }
+>>>>>>> 221781982b5b09ee9b0c180a83741d8cacb36092
     }
 }
