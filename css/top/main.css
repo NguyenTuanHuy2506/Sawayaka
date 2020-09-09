@@ -18,8 +18,8 @@
 .news__date,
 .equip-slick li h6,
 .nd-menu__inner li h3 span,
-.menu__item p,
-.menu__item div h5,
+.pri-menu__item p,
+.pri-menu__item div h5,
 .about__content p,
 .about__content h3,
 .heading-sub {
@@ -44,7 +44,7 @@
 .news__content,
 .news__date,
 .equip-slick li h6,
-.menu__item p,
+.pri-menu__item p,
 .about__content p,
 .mv h2 .mv__content,
 .btn.btn--radius {
@@ -52,7 +52,7 @@
 }
 
 .nd-menu__inner li h3 span,
-.menu__item div h5,
+.pri-menu__item div h5,
 .about__content h3,
 .heading-sub {
     font-weight: 700;
@@ -61,7 +61,7 @@
 .news__inner li::after,
 .news__inner li,
 .nd-menu__inner li,
-.menu__item div,
+.pri-menu__item div,
 .about__img,
 .btn {
     transition: all 0.3s ease;
@@ -391,13 +391,13 @@
  * menu area
  * --------------------------------------------
  */
-.menu {
+.pri-menu {
     width: 100%;
     background-color: #eaece7;
     padding: 8rem 0;
 }
 
-.menu__inner {
+.pri-menu__inner {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -405,38 +405,38 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .menu__inner {
+    .pri-menu__inner {
         padding: 0 2rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .menu__inner {
+    .pri-menu__inner {
         justify-content: space-around;
     }
 }
 
-.menu__inner li {
+.pri-menu__inner li {
     margin-top: 4rem;
     width: 100%;
     max-width: 17rem;
 }
 
 @media screen and (max-width: 1024px) {
-    .menu__inner li {
+    .pri-menu__inner li {
         max-width: calc((100% / 3) - 10px);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .menu__inner li {
+    .pri-menu__inner li {
         max-width: 28rem;
         margin-left: 2rem;
         margin-right: 2rem;
     }
 }
 
-.menu__item div {
+.pri-menu__item div {
     position: relative;
     width: 17rem;
     height: 17rem;
@@ -449,27 +449,27 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .menu__item div {
+    .pri-menu__item div {
         margin: 0 auto;
     }
 }
 
-.menu__item div:hover {
+.pri-menu__item div:hover {
     opacity: 0.75;
 }
 
-.menu__item div h5 {
+.pri-menu__item div h5 {
     font-size: 1.6rem;
     margin-top: 2.5rem;
 }
 
-.menu__item p {
+.pri-menu__item p {
     font-size: 1.4rem;
     letter-spacing: 0.1rem;
     margin-top: 2rem;
 }
 
-.menu .btn {
+.pri-menu .btn {
     margin: 0 auto;
     margin-top: 6rem;
 }
