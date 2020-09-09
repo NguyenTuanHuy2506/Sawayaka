@@ -98,6 +98,9 @@
         color: #71bb48;
         font-size: 1.6rem;
         border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @extend %letter-spacing-default;
         @extend %font-weight-500;
 
@@ -214,7 +217,7 @@
     &__inner {
         width: 100%;
         display: inline-flex;
-        margin: 5.5rem 0;
+        margin: 8rem 0;
         justify-content: space-between;
         @include mobile{
             flex-wrap: wrap;

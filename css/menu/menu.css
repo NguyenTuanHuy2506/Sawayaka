@@ -63,6 +63,9 @@
   color: #71bb48;
   font-size: 1.6rem;
   border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .btn.btn--radius {
@@ -160,7 +163,7 @@
 .nd-menu__inner {
   width: 100%;
   display: inline-flex;
-  margin: 5.5rem 0;
+  margin: 8rem 0;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
