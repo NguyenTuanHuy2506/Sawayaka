@@ -135,104 +135,43 @@ body {
   max-width: 100%; }
 
 .fold1 {
-  margin-bottom: 80px; }
+  margin-bottom: 75px; }
   @media screen and (max-width: 768px) {
     .fold1 {
-      margin-bottom: 30px; } }
-  .fold1-h3 {
-    margin: 45px auto 32px; }
-    @media screen and (max-width: 768px) {
-      .fold1-h3 {
-        margin: 25px auto 10px;
-        line-height: 1.6; } }
-  .fold1-figure {
-    display: table;
-    margin: 0px auto;
-    position: relative;
-    border-radius: 20px; }
-    .fold1-figure .img-clover {
-      position: absolute;
-      right: 30px;
-      bottom: -40px; }
-      @media screen and (max-width: 768px) {
-        .fold1-figure .img-clover {
-          width: 14.44%;
-          top: 74.4%;
-          bottom: auto; } }
-    .fold1-figure .img-about {
-      border-radius: inherit; }
-  .fold1-p {
-    max-width: 830px;
-    letter-spacing: 0.05rem;
-    text-align: center;
-    line-height: 1.8;
-    width: 100%;
-    margin: 0px auto; }
-  .fold1-wrap {
-    max-width: 620px;
-    display: flex;
-    margin: 35px auto 0px;
-    justify-content: space-between; }
-    @media screen and (max-width: 768px) {
-      .fold1-wrap {
-        justify-content: center;
-        flex-wrap: wrap; } }
-    .fold1-wrap figure {
-      padding: 0px 10px; }
-      @media screen and (max-width: 768px) {
-        .fold1-wrap figure {
-          padding: 0px 20px;
-          margin-bottom: 25px; } }
-      .fold1-wrap figure span {
-        display: block;
-        text-align: center;
-        line-height: 1;
-        margin-top: 12px; }
+      margin-bottom: 50px; } }
 
-.fold2 {
-  padding: 80px 0px 40px;
-  position: relative; }
-  @media screen and (max-width: 768px) {
-    .fold2 {
-      padding: 40px 0px 20px; } }
-  .fold2::after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 1px;
-    background: #cccccc;
-    z-index: 1; }
+@media screen and (max-width: 768px) {
   .fold2-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0px auto;
-    justify-content: space-between; }
+    flex-direction: column; } }
+
+.fold2-ul {
+  max-width: 340px; }
+  @media screen and (max-width: 768px) {
+    .fold2-ul {
+      max-width: 100%; } }
+  .fold2-ul:not(:last-of-type) {
+    margin-right: 20px; }
     @media screen and (max-width: 768px) {
-      .fold2-wrap {
-        justify-content: center;
-        padding: 0px 10px; } }
-  .fold2-li {
-    max-width: 340px;
-    margin-bottom: 55px;
-    letter-spacing: 0.06rem;
-    width: 32vw; }
+      .fold2-ul:not(:last-of-type) {
+        margin-right: 0px;
+        margin-bottom: 25px; } }
+  @media screen and (max-width: 768px) {
+    .fold2-ul .li-figure {
+      display: table;
+      margin: 0px auto; } }
+  .fold2-ul .li-content span {
+    display: block;
+    text-align: center;
+    line-height: 1;
+    margin: 20px 0px; }
     @media screen and (max-width: 768px) {
-      .fold2-li {
-        width: auto;
-        margin-bottom: 30px;
-        min-width: 280px;
-        padding: 0px 10px; } }
-    .fold2-li span {
-      display: block;
-      line-height: 1;
-      margin: 20px auto 12px; }
-      @media screen and (max-width: 768px) {
-        .fold2-li span {
-          margin: 15px auto 10px; } }
-    .fold2-li p {
-      line-height: 1.8; }
-    .fold2-li img {
-      border-radius: 20px; }
+      .fold2-ul .li-content span {
+        margin: 15px 0px; } }
+  .fold2-ul .li-content p {
+    line-height: 1.8;
+    letter-spacing: 0.02rem; }
+
+.fold3-div {
+  max-width: 980px;
+  width: 100%;
+  margin: 0px auto; }
