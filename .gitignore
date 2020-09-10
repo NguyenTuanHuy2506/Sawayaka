@@ -3,3 +3,4 @@ scss
 sass
 *.scss
 gulpfile.js
+.vscode
