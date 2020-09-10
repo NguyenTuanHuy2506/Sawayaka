@@ -69,6 +69,12 @@
  * common css
  */
 
+.container{
+    @include mobile{
+        padding: 0 2rem;
+    }
+}
+
 .f-comma {
     display: inline-block;
     max-width: 1rem;
@@ -269,7 +275,8 @@
     padding-top: 8rem;
 
     @include mobile {
-        padding: 5rem 2rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
     &__inner {
@@ -405,21 +412,24 @@
             height: 17rem;
             background-color: #fff;
             border-radius: 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            
             @extend %transition-default;
 
             @include ipadpro {
                 margin: 0 auto;
+            }
+            .nav--link{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
             &:hover {
                 opacity: .75;
             }
 
-            h5 {
+            p {
                 font-size: 1.6rem;
                 margin-top: 2.5rem;
                 @extend %font-color;
@@ -483,16 +493,18 @@
                     object-position: 70%;
                 }
             }
-
-            h3 {
+            .nav--link{
+                position: relative;
+            }
+            div {
                 position: absolute;
                 color: #71bb48;
                 font-style: italic;
                 font-size: 2rem;
                 left: 6rem;
                 @extend %font-Vollkorn;
-                top: 50%;
-                transform: translateY(-50%);
+                top: 0;
+                // transform: translateY(-50%);
                 @include mobile{
                     left: 6.25vw;
                 }
@@ -620,17 +632,16 @@
         padding: 0 6rem;
         margin-top: 3rem;
         @include mobile{
-            padding: 0 2rem;
+            padding: 0;
         }
 
         li {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            padding: 1.9rem 1rem;
+                      position: relative;
+            
             border-bottom: .1rem solid #ccc;
             @extend %transition-default;
+
+
 
             @include mobile{
                 padding-right: 4rem;
@@ -643,7 +654,14 @@
                     right: 0;
                 }
             }
-
+ .nav--link{
+                position: relative;
+                width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1.9rem 1rem;
+  
+            }
             &::after {
                 content: '';
                 display: inline-block;

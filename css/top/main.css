@@ -9,7 +9,7 @@
     color: #92c96a;
 }
 
-.nd-menu__inner li h3 span,
+.nd-menu__inner li div span,
 .heading-sub {
     font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
 }
@@ -17,9 +17,9 @@
 .news__content,
 .news__date,
 .equip-slick li h6,
-.nd-menu__inner li h3 span,
+.nd-menu__inner li div span,
 .pri-menu__item p,
-.pri-menu__item div h5,
+.pri-menu__item div p,
 .about__content p,
 .about__content h3,
 .heading-sub {
@@ -36,7 +36,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-.nd-menu__inner li h3,
+.nd-menu__inner li div,
 .heading {
     font-family: "Vollkorn", serif;
 }
@@ -51,8 +51,8 @@
     font-weight: 500;
 }
 
-.nd-menu__inner li h3 span,
-.pri-menu__item div h5,
+.nd-menu__inner li div span,
+.pri-menu__item div p,
 .about__content h3,
 .heading-sub {
     font-weight: 700;
@@ -71,6 +71,12 @@
  * ---------------------------------
  * common css
  */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
 .f-comma {
     display: inline-block;
     max-width: 1rem;
@@ -291,7 +297,8 @@
 
 @media screen and (max-width: 768px) {
     .about {
-        padding: 5rem 2rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 }
 
@@ -442,10 +449,6 @@
     height: 17rem;
     background-color: #fff;
     border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -454,11 +457,18 @@
     }
 }
 
+.pri-menu__item div .nav--link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .pri-menu__item div:hover {
     opacity: 0.75;
 }
 
-.pri-menu__item div h5 {
+.pri-menu__item div p {
     font-size: 1.6rem;
     margin-top: 2.5rem;
 }
@@ -526,23 +536,26 @@
     }
 }
 
-.nd-menu__inner li h3 {
+.nd-menu__inner li .nav--link {
+    position: relative;
+}
+
+.nd-menu__inner li div {
     position: absolute;
     color: #71bb48;
     font-style: italic;
     font-size: 2rem;
     left: 6rem;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
 }
 
 @media screen and (max-width: 768px) {
-    .nd-menu__inner li h3 {
+    .nd-menu__inner li div {
         left: 6.25vw;
     }
 }
 
-.nd-menu__inner li h3 span {
+.nd-menu__inner li div span {
     display: block;
     font-size: 1.6rem;
     font-style: normal;
@@ -662,16 +675,12 @@
 
 @media screen and (max-width: 768px) {
     .news__inner {
-        padding: 0 2rem;
+        padding: 0;
     }
 }
 
 .news__inner li {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     position: relative;
-    padding: 1.9rem 1rem;
     border-bottom: 0.1rem solid #ccc;
 }
 
@@ -687,6 +696,14 @@
 
 .news__inner li:hover::after {
     right: 0;
+}
+
+.news__inner li .nav--link {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.9rem 1rem;
 }
 
 .news__inner li::after {
