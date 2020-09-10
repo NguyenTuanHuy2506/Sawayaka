@@ -224,8 +224,5 @@ body {
       border-top: 1px solid #cccccc; }
     .fold3 dl:last-of-type {
       border-bottom: 1px solid #cccccc; }
-    @media screen and (max-width: 768px) {
-      .fold3 dl {
-        padding: 0px 20px; } }
   .fold3 dd {
     font-weight: bold; }

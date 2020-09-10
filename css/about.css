@@ -150,7 +150,6 @@ body {
     @media screen and (max-width: 768px) {
       .fold1-h3 {
         margin: 25px auto 10px;
-        padding: 0px 20px;
         line-height: 1.6; } }
   .fold1-figure {
     display: table;
@@ -175,9 +174,6 @@ body {
     line-height: 1.8;
     width: 100%;
     margin: 0px auto; }
-    @media screen and (max-width: 768px) {
-      .fold1-p {
-        padding: 0px 20px; } }
   .fold1-wrap {
     max-width: 620px;
     display: flex;
@@ -186,8 +182,7 @@ body {
     @media screen and (max-width: 768px) {
       .fold1-wrap {
         justify-content: center;
-        flex-wrap: wrap;
-        margin: 20px auto 0px; } }
+        flex-wrap: wrap; } }
     .fold1-wrap figure {
       padding: 0px 10px; }
       @media screen and (max-width: 768px) {
@@ -210,15 +205,12 @@ body {
     content: '';
     position: absolute;
     top: 0px;
-    left: 50%;
-    max-width: 1120px;
+    left: 0px;
     width: 100%;
-    transform: translateX(-50%);
     height: 1px;
     background: #cccccc;
     z-index: 1; }
   .fold2-wrap {
-    max-width: 1140px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -229,16 +221,16 @@ body {
         justify-content: center;
         padding: 0px 10px; } }
   .fold2-li {
-    max-width: 360px;
-    padding: 0px 10px;
+    max-width: 340px;
     margin-bottom: 55px;
     letter-spacing: 0.06rem;
-    width: 32.5vw; }
+    width: 32vw; }
     @media screen and (max-width: 768px) {
       .fold2-li {
-        width: 50%;
+        width: auto;
         margin-bottom: 30px;
-        min-width: 280px; } }
+        min-width: 280px;
+        padding: 0px 10px; } }
     .fold2-li span {
       display: block;
       line-height: 1;
