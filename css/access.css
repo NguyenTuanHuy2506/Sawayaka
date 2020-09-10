@@ -187,9 +187,6 @@ body {
 
 .access .map-title {
   font-weight: bold; }
-  @media screen and (max-width: 768px) {
-    .access .map-title {
-      padding: 0px 20px; } }
 
 .access .map-figure {
   padding-bottom: 56.25%;
@@ -212,6 +209,9 @@ body {
   max-width: 960px;
   width: 100%;
   margin: 0px auto 100px; }
+  @media screen and (max-width: 768px) {
+    .access-wrap {
+      margin: 0px auto 60px; } }
   .access-wrap.map1 {
     margin-bottom: 95px; }
     @media screen and (max-width: 768px) {
@@ -226,14 +226,12 @@ body {
       letter-spacing: 0.1rem; }
       @media screen and (max-width: 768px) {
         .access-wrap.map1 > span {
-          padding: 0px 20px;
           margin: 15px 0px 12px; } }
     .access-wrap.map1 > p {
       line-height: 1;
       letter-spacing: 0.1rem; }
       @media screen and (max-width: 768px) {
         .access-wrap.map1 > p {
-          padding: 0px 20px;
           line-height: 1.6; } }
       .access-wrap.map1 > p a {
         display: inline-block;
