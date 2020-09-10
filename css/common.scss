@@ -38,6 +38,9 @@ body {
     background-color: #555;
   }
 }
+h1, h2, h3, h4, h5, h6{
+  font-weight: 400;
+}
 @supports (-ms-ime-align: auto) {
   body > main {
     overflow: hidden;
@@ -54,7 +57,7 @@ header {
   width: 100%;
   z-index: 888;
   top: 0;
-  transition: all .5s;
+  transition: all 0.5s;
   .header-content {
     transition: all 0.5s;
     padding: 25px 0;
@@ -157,6 +160,7 @@ header {
     color: #b6d69e;
     font-family: "Vollkorn", serif;
     font-size: 8.2rem;
+    font-weight: 400;
     text-align: center;
     font-style: italic;
     margin: 32px 0 33px 0;
@@ -575,6 +579,15 @@ footer {
           font-size: 1.8rem;
           margin-left: -10px;
         }
+      }
+    }
+  }
+  .top-title {
+    .title {
+      font-size: 5rem;
+      span {
+        margin-top: -21px;
+        font-size: 1.8rem;
       }
     }
   }
