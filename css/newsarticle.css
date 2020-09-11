@@ -1,148 +1,113 @@
 body {
-  font-size: 1.4rem;
-}
+  font-size: 1.4rem; }
 
 @font-face {
   font-family: "HiRaKaKu Pro";
-  src: url(../../assets/fonts/hirakakupro-w6-opentype_bigfontsite.com.otf);
-}
+  src: url(../../assets/fonts/hirakakupro-w6-opentype_bigfontsite.com.otf); }
 
 p {
-  letter-spacing: 2px;
-}
+  letter-spacing: 2px; }
 
 .text {
-  letter-spacing: 0px;
-}
+  letter-spacing: 0px; }
 
 .block-1 .block-content {
   display: flex;
-  justify-content: space-between;
-}
-.block-1 .block-content span.title {
-  display: block;
-  color: #71bb48;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding-bottom: 11px;
-  border-bottom: 1px solid #71bb48;
-}
-.block-1 .block-content .content-1 {
-  max-width: calc(50% + 240px);
-  width: 100%;
-}
-.block-1 .block-content .content-1 span.num {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.block-1 .block-content .content-1 .img {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-.block-1 .block-content .content-1 .img img {
-  max-width: 600px;
-  width: 100%;
-}
-.block-1 .block-content .content-2 {
-  max-width: calc(50% - 260px);
-  width: 100%;
-}
-.block-1 .block-content .content-2 ul li a.text {
-  display: block;
-  margin-bottom: 19px;
-  text-decoration: underline !important;
-  color: #333333;
-}
-.block-1 .block-content .content-2 .text:first-of-type {
-  margin-top: 28px;
-}
+  justify-content: space-between; }
+  .block-1 .block-content span.title {
+    display: block;
+    color: #71bb48;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #71bb48; }
+  .block-1 .block-content .content-1 {
+    max-width: calc(50% + 240px);
+    width: 100%; }
+    .block-1 .block-content .content-1 span.num {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 40px; }
+    .block-1 .block-content .content-1 .img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px; }
+      .block-1 .block-content .content-1 .img img {
+        max-width: 600px;
+        width: 100%; }
+  .block-1 .block-content .content-2 {
+    max-width: calc(50% - 260px);
+    width: 100%; }
+    .block-1 .block-content .content-2 ul li a.text {
+      display: block;
+      margin-bottom: 19px;
+      text-decoration: underline !important;
+      color: #333333; }
+    .block-1 .block-content .content-2 .text:first-of-type {
+      margin-top: 28px; }
 
 .block-2 {
-  margin-bottom: 80px;
-}
-.block-2 .block-content {
-  max-width: 800px;
-  width: 100%;
-}
-.block-2 .block-content .content-1 .img {
-  padding: 40px 0;
-}
-.block-2 .block-content .content-2 p {
-  margin-bottom: 20px;
-}
-.block-2 .block-content .content-2 .link-text {
-  color: #71bb48;
-  text-decoration: underline !important;
-}
-.block-2 .block-content .content-2 ul.dot {
-  margin-top: 28px;
-}
-.block-2 .block-content .content-2 ul.dot li {
-  margin: 6px 0;
-}
-.block-2 .block-content .content-2 ul.dot li:before {
-  content: "\2022";
-  color: #71bb48;
-  font-weight: bold;
-  display: inline-block;
-  width: 1px;
-  margin-right: 7px;
-}
-.block-2 .block-content .content-2 ol.number {
-  list-style: none;
-  margin: 28px 0;
-  counter-reset: my-awesome-counter;
-}
-.block-2 .block-content .content-2 ol.number li {
-  counter-increment: my-awesome-counter;
-  margin: 6px 0;
-}
-.block-2 .block-content .content-2 ol.number li:before {
-  content: counter(my-awesome-counter) ". ";
-  color: #71bb48;
-  font-weight: bold;
-}
-.block-2 .block-content .content-2 .h-1 {
-  font-family: "HiRaKaKu Pro";
-  font-size: 1.8rem;
-  color: #1f1f1f;
-  font-weight: bold;
-}
-.block-2 .block-content .content-2 .h-2 {
-  font-family: "HiRaKaKu Pro";
-  font-size: 1.6rem;
-  color: #1f1f1f;
-  font-weight: bold;
-}
-.block-2 .block-content .content-2 .quote {
-  border-left: 1px solid #71bb48;
-  padding: 5px 0 5px 16px;
-}
-.block-2 .block-content .content-2 .quote p {
-  margin-bottom: 1px;
-}
+  margin-bottom: 80px; }
+  .block-2 .block-content {
+    max-width: 800px;
+    width: 100%; }
+    .block-2 .block-content .content-1 .img {
+      padding: 40px 0; }
+    .block-2 .block-content .content-2 p {
+      margin-bottom: 20px; }
+    .block-2 .block-content .content-2 .link-text {
+      color: #71bb48;
+      text-decoration: underline !important; }
+    .block-2 .block-content .content-2 ul.dot {
+      margin-top: 28px; }
+      .block-2 .block-content .content-2 ul.dot li {
+        margin: 6px 0; }
+        .block-2 .block-content .content-2 ul.dot li:before {
+          content: "\2022";
+          color: #71bb48;
+          font-weight: bold;
+          display: inline-block;
+          width: 1px;
+          margin-right: 7px; }
+    .block-2 .block-content .content-2 ol.number {
+      list-style: none;
+      margin: 28px 0;
+      counter-reset: my-awesome-counter; }
+      .block-2 .block-content .content-2 ol.number li {
+        counter-increment: my-awesome-counter;
+        margin: 6px 0; }
+        .block-2 .block-content .content-2 ol.number li:before {
+          content: counter(my-awesome-counter) ". ";
+          color: #71bb48;
+          font-weight: bold; }
+    .block-2 .block-content .content-2 .h-1 {
+      font-family: "HiRaKaKu Pro";
+      font-size: 1.8rem;
+      color: #1f1f1f;
+      font-weight: bold; }
+    .block-2 .block-content .content-2 .h-2 {
+      font-family: "HiRaKaKu Pro";
+      font-size: 1.6rem;
+      color: #1f1f1f;
+      font-weight: bold; }
+    .block-2 .block-content .content-2 .quote {
+      border-left: 1px solid #71bb48;
+      padding: 5px 0 5px 16px; }
+      .block-2 .block-content .content-2 .quote p {
+        margin-bottom: 1px; }
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 20px;
-  }
+    padding: 0 20px; }
   .block-1 .block-content {
-    flex-wrap: wrap;
-  }
-  .block-1 .block-content .title {
-    line-height: 25px;
-  }
-  .block-1 .block-content .content-1,
-  .block-1 .block-content .content-2 {
-    max-width: 100%;
-  }
-  .block-1 .block-content .content-1 .text,
-  .block-1 .block-content .content-2 .text {
-    font-size: 1.3rem;
-  }
+    flex-wrap: wrap; }
+    .block-1 .block-content .title {
+      line-height: 25px; }
+    .block-1 .block-content .content-1,
+    .block-1 .block-content .content-2 {
+      max-width: 100%; }
+      .block-1 .block-content .content-1 .text,
+      .block-1 .block-content .content-2 .text {
+        font-size: 1.3rem; }
   .block-2 .block-content .content-2 .quote p {
-    font-size: 1.2rem;
-  }
-}
+    font-size: 1.2rem; } }
