@@ -10,7 +10,7 @@
 .nav-page li,
 .news__lasted li p,
 .news__list li p,
-.news__list li h6 {
+.news__list li span {
     font-weight: 500;
 }
 
@@ -101,6 +101,7 @@
     padding: 1rem 0;
     border-bottom: 0.1rem solid #92c96a;
     letter-spacing: 0.1rem;
+    display: block;
 }
 
 .news__list {
@@ -109,11 +110,6 @@
 
 .news__list li {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    padding: 1.9rem 1rem;
-    padding-left: 0;
     border-bottom: 0.1rem solid #ccc;
 }
 
@@ -131,12 +127,22 @@
     right: 0;
 }
 
-.news__list li h6 {
+.news__list li .nav--link {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 1.9rem 1rem;
+    padding-left: 0;
+}
+
+.news__list li span {
     font-size: 1.4rem;
     color: #1f1f1f;
 }
 
-.news__list li h6 span {
+.news__list li span span {
     display: inline-block;
     margin: 0 1.5rem;
 }
@@ -164,9 +170,9 @@
 
 .news__lasted li {
     width: 100%;
-    padding-left: 2rem;
     position: relative;
     margin-top: 2rem;
+    padding-left: 2rem;
 }
 
 .news__lasted li:hover {
@@ -183,6 +189,10 @@
     position: absolute;
     top: 0.6rem;
     left: 0.3rem;
+}
+
+.news__lasted li .nav--link {
+    position: relative;
 }
 
 .news__lasted li p {

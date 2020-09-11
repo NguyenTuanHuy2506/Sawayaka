@@ -51,15 +51,9 @@ body {
 
 .f-sample14 {
   font-size: 1.4rem; }
-  @media screen and (max-width: 768px) {
-    .f-sample14 {
-      font-size: 1.2rem; } }
 
 .f-sample16 {
   font-size: 1.6rem; }
-  @media screen and (max-width: 768px) {
-    .f-sample16 {
-      font-size: 1.4rem; } }
 
 .hover-ef {
   position: relative;
@@ -182,6 +176,10 @@ body {
         .fold1-content p.text-color {
           margin-bottom: 10px; } }
 
+@media screen and (max-width: 768px) {
+  .fold2-wrap {
+    flex-direction: column; } }
+
 .fold2-ul {
   max-width: 340px; }
   @media screen and (max-width: 768px) {
@@ -211,6 +209,10 @@ body {
 
 .fold3 {
   margin-bottom: 80px; }
+  .fold3-div {
+    max-width: 980px;
+    width: 100%;
+    margin: 0px auto; }
   .fold3 dl {
     max-width: 980px;
     width: 100%;
@@ -224,8 +226,5 @@ body {
       border-top: 1px solid #cccccc; }
     .fold3 dl:last-of-type {
       border-bottom: 1px solid #cccccc; }
-    @media screen and (max-width: 768px) {
-      .fold3 dl {
-        padding: 0px 20px; } }
   .fold3 dd {
     font-weight: bold; }

@@ -5,13 +5,13 @@
  * font-family: 'Roboto', sans-serif;
  * font-family: 'Vollkorn', serif;
  */
-.nd-menu__inner li h3 span {
+.nd-menu__inner li div span {
     font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
 }
 
-.nd-menu__inner li h3 span,
-.mbox p,
-.mbox h5,
+.nd-menu__inner li div span,
+.mbox__description,
+.mbox__title,
 .menu__title {
     color: #555;
 }
@@ -20,17 +20,17 @@
     letter-spacing: 0.3rem;
 }
 
-.nd-menu__inner li h3 {
+.nd-menu__inner li div {
     font-family: "Vollkorn", serif;
 }
 
-.mbox p,
+.mbox__description,
 .btn.btn--radius {
     font-weight: 500;
 }
 
-.nd-menu__inner li h3 span,
-.mbox h5,
+.nd-menu__inner li div span,
+.mbox__title,
 .menu__title {
     font-weight: 700;
 }
@@ -45,6 +45,12 @@
  * ---------------------------------
  * common css
  */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
 .nav--link {
     position: absolute;
     top: 0;
@@ -109,12 +115,6 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
-    .menu__inner {
-        padding: 0 2rem;
-    }
-}
-
 .menu__inner li {
     width: 100%;
     max-width: calc((100% / 3) - 27px);
@@ -158,16 +158,23 @@
 
 .mbox__img {
     width: 100%;
+    max-height: 24rem;
     border-radius: 2rem;
 }
 
-.mbox h5 {
+@media screen and (max-width: 768px) {
+    .mbox__img {
+        max-height: 100%;
+    }
+}
+
+.mbox__title {
     font-size: 1.6rem;
     text-align: center;
     margin-top: 1rem;
 }
 
-.mbox p {
+.mbox__description {
     font-size: 1.4rem;
     letter-spacing: 0.1rem;
     margin-top: 1rem;
@@ -218,6 +225,10 @@
     opacity: 0.75;
 }
 
+.nd-menu__inner li .nav--link {
+    position: relative;
+}
+
 .nd-menu__inner li img {
     width: 100%;
 }
@@ -230,23 +241,22 @@
     }
 }
 
-.nd-menu__inner li h3 {
+.nd-menu__inner li div {
     position: absolute;
     color: #71bb48;
     font-style: italic;
     font-size: 2rem;
     left: 6rem;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0%;
 }
 
 @media screen and (max-width: 768px) {
-    .nd-menu__inner li h3 {
+    .nd-menu__inner li div {
         left: 6.25vw;
     }
 }
 
-.nd-menu__inner li h3 span {
+.nd-menu__inner li div span {
     display: block;
     font-size: 1.6rem;
     font-style: normal;
