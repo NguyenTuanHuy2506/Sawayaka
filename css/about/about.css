@@ -221,7 +221,7 @@ body {
     max-width: 340px;
     margin-bottom: 55px;
     letter-spacing: 0.06rem;
-    width: 32vw; }
+    width: 31vw; }
     @media screen and (max-width: 768px) {
       .fold2-li {
         width: auto;
