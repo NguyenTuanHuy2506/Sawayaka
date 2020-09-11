@@ -98,6 +98,8 @@ a, a:hover, a:visited, a:focus, a:active {
       left: 0; }
     .two-block--separate .two-block__child:hover {
       opacity: 0.8; }
+    .two-block--separate .two-block__child--unhover:hover {
+      opacity: 1; }
   .two-block--separate ul {
     display: flex;
     justify-content: space-between;
