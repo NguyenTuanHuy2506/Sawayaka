@@ -1,32 +1,22 @@
-html {
-  font-size: 10px;
-  line-height: 1; }
-  html a {
-    outline: none !important;
-    color: inherit; }
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.4rem; } }
 
-img {
+.main img {
   display: block;
   image-rendering: pixelated; }
 
-header img {
-  display: inline; }
+.main a {
+  outline: none !important;
+  color: inherit; }
 
-.top-title .title {
-  font-weight: 400; }
-  .top-title .title span {
-    line-height: 1.1; }
+.top-title .title span {
+  line-height: 1.1; }
 
 button {
   outline: none;
   font-family: inherit !important;
   font-size: inherit !important; }
-
-body {
-  font-size: 1.6rem; }
-  @media screen and (max-width: 768px) {
-    body {
-      font-size: 1.4rem; } }
 
 .ele-hover {
   opacity: 1;
