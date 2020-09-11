@@ -199,8 +199,10 @@ body {
     content: '';
     position: absolute;
     top: 0px;
-    left: 0px;
     width: 100%;
+    max-width: 1120px;
+    left: 50%;
+    transform: translateX(-50%);
     height: 1px;
     background: #cccccc;
     z-index: 1; }
@@ -213,18 +215,18 @@ body {
     @media screen and (max-width: 768px) {
       .fold2-wrap {
         justify-content: center;
-        padding: 0px 10px; } }
+        flex-direction: column;
+        align-items: center; } }
   .fold2-li {
     max-width: 340px;
     margin-bottom: 55px;
     letter-spacing: 0.06rem;
-    width: 32vw; }
+    width: 31vw; }
     @media screen and (max-width: 768px) {
       .fold2-li {
         width: auto;
         margin-bottom: 30px;
-        min-width: 280px;
-        padding: 0px 10px; } }
+        min-width: 280px; } }
     .fold2-li span {
       display: block;
       line-height: 1;
