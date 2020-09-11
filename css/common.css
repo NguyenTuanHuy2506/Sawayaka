@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,6 +7,7 @@
 
 a {
   text-decoration: none !important;
+  transition: 0.3s ease-in-out;
 }
 a:hover {
   opacity: 0.8;
@@ -80,10 +80,10 @@ header {
   width: 100%;
   z-index: 888;
   top: 0;
-  transition: all 0.5s;
+  transition: 0.3s ease-in-out;
 }
 header .header-content {
-  transition: all 0.5s;
+  transition: 0.3s ease-in-out;
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
@@ -441,7 +441,7 @@ footer .footer-info .main-content span {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  transition: 0.3s ease-in-out;
 }
 #backTop span {
   transform: rotate(45deg);
@@ -451,7 +451,7 @@ footer .footer-info .main-content span {
   border-top: 3px solid #71bb48;
   border-left: 3px solid #71bb48;
   margin-top: 20px;
-  transition: all 0.5s;
+  transition: 0.3s ease-in-out;
 }
 #backTop:hover {
   background-color: #71bb48;
@@ -485,7 +485,7 @@ footer .footer-info .main-content span {
     height: 0;
     overflow: hidden;
     width: 100vw;
-    transition: all 0.5s;
+    transition: 0.3s ease-in-out;
     z-index: 999;
     background-color: white;
     display: flex;
@@ -529,7 +529,7 @@ footer .footer-info .main-content span {
     top: 50%;
     left: 0;
     background-color: #71bb48;
-    transition: all 0.5s;
+    transition: 0.3s ease-in-out;
   }
   header .menu-burger .menu span:first-of-type {
     transform: translateY(-15px);
