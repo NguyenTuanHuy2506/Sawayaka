@@ -50,6 +50,11 @@ body {
     background-color: #555;
   }
 }
+header {
+  span {
+    line-height: 1rem !important;
+  }
+}
 footer {
   .x {
     width: 15px;
@@ -215,16 +220,20 @@ header {
     }
   }
   .break-cumb-title {
+    ul {
+    }
     li {
       display: inline-block;
       padding: 0 15px;
       border-right: 1px solid #d7d7d6;
       a {
+        display: block;
         color: #d7d7d6;
         font-size: 1.2rem;
       }
       a.active {
         color: #555555;
+        display: block;
       }
     }
     li:last-of-type {
