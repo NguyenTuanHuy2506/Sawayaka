@@ -1,15 +1,18 @@
+body {
+  font-size: 1.6rem;
+}
 @media screen and (max-width: 768px) {
   body {
     font-size: 1.4rem;
   }
 }
 
-.main img {
+main img {
   display: block;
   image-rendering: pixelated;
 }
 
-.main a {
+main a {
   outline: none !important;
   color: inherit;
 }
