@@ -11,6 +11,12 @@ a {
     opacity: 0.8;
   }
 }
+ul {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+}
 body {
   font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
     "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN",
@@ -42,6 +48,18 @@ body {
     border-radius: 20px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #555;
+  }
+}
+footer {
+  .x {
+    width: 15px;
+    height: 15px;
+  }
+  img {
+    display: block !important;
+  }
+  span {
+    display: block !important;
   }
 }
 .container {
@@ -93,6 +111,8 @@ header {
         font-weight: bold;
         font-size: 2.4rem;
         color: #555555;
+        display: flex;
+        align-items: center;
       }
     }
   }
@@ -246,21 +266,30 @@ footer {
   .logo-footer {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 45px;
     .details {
       padding-left: 20px;
+      padding-top: 18px;
     }
     .small {
       font-size: 1.2rem;
-      display: block;
+      display: block !important;
       margin-bottom: 15px;
+      line-height: 1;
     }
     .big {
       font-size: 2.4rem;
       text-indent: -5px;
       font-weight: bold;
+      line-height: 1;
+      display: block !important;
     }
+  }
+  .d-foot-phone-res {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
   .reservation {
     font-size: 1.6rem;
@@ -314,6 +343,7 @@ footer {
         margin-top: 18px;
         width: 550px;
         border: 1px solid #cccccc;
+        border-collapse: collapse;
         .table-ul {
           display: flex;
           justify-content: space-between;
@@ -322,6 +352,7 @@ footer {
           li {
             display: inline-block;
             font-size: 1.8rem;
+            font-weight: 500;
             span {
               display: block;
               width: 15px;
@@ -361,27 +392,37 @@ footer {
         }
         .green {
           margin-right: 25px;
+          display: block;
         }
         .details {
           display: flex;
           justify-content: flex-start;
-          margin-bottom: 10px;
-        }
-        .img {
-          display: flex;
-          justify-content: center;
           align-items: center;
-          width: 15px;
-          height: 15px;
-          margin-right: 25px;
-          position: relative;
-          &:before {
-            content: ". . .";
-            position: absolute;
-            letter-spacing: -1px;
-            right: -19px;
-            top: -18%;
-            font-size: 1.4rem;
+          margin-bottom: 10px;
+          line-height: 1.5rem;
+          .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 15px;
+            margin-right: 25px;
+            position: relative;
+            &:before {
+              content: ". . .";
+              position: absolute;
+              letter-spacing: -1px;
+              right: -19px;
+              top: -3px;
+              font-size: 1.4rem;
+            }
+          }
+        }
+        .details:last-of-type {
+          line-height: 1rem;
+          .img {
+            // &:before {
+            //   top: -9px;
+            // }
           }
         }
       }

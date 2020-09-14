@@ -4,7 +4,7 @@
  * font-family: 'Vollkorn', serif;
  */
 .news__tag {
-    color: #92c96a;
+    color: #71bb48;
 }
 
 .nav-page li,
@@ -99,7 +99,7 @@
 .news__tag {
     font-size: 1.8rem;
     padding: 1rem 0;
-    border-bottom: 0.1rem solid #92c96a;
+    border-bottom: 0.1rem solid #71bb48;
     letter-spacing: 0.1rem;
     display: block;
 }
