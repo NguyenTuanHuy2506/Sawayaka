@@ -10,6 +10,12 @@ a {
   a:hover {
     opacity: 0.8; }
 
+ul {
+  list-style: none; }
+
+html {
+  font-size: 10px; }
+
 body {
   font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
   font-size: 62.5%;
@@ -33,6 +39,16 @@ body {
     border-radius: 20px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #555; }
+
+footer .x {
+  width: 15px;
+  height: 15px; }
+
+footer img {
+  display: block !important; }
+
+footer span {
+  display: block !important; }
 
 .container {
   max-width: 1120px;
@@ -76,7 +92,9 @@ header {
   header .logo h1 a {
     font-weight: bold;
     font-size: 2.4rem;
-    color: #555555; }
+    color: #555555;
+    display: flex;
+    align-items: center; }
   header .menu-header .main-menu-header {
     display: flex;
     align-items: center; }
@@ -194,18 +212,27 @@ footer .x {
 footer .logo-footer {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 45px; }
   footer .logo-footer .details {
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-top: 18px; }
   footer .logo-footer .small {
     font-size: 1.2rem;
-    display: block;
-    margin-bottom: 15px; }
+    display: block !important;
+    margin-bottom: 15px;
+    line-height: 1; }
   footer .logo-footer .big {
     font-size: 2.4rem;
     text-indent: -5px;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 1;
+    display: block !important; }
+
+footer .d-foot-phone-res {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; }
 
 footer .reservation {
   font-size: 1.6rem;
@@ -256,7 +283,8 @@ footer .footer-content-main {
   footer .footer-content-main .block .table-footer {
     margin-top: 18px;
     width: 550px;
-    border: 1px solid #cccccc; }
+    border: 1px solid #cccccc;
+    border-collapse: collapse; }
     footer .footer-content-main .block .table-footer .table-ul {
       display: flex;
       justify-content: space-between;
@@ -264,7 +292,8 @@ footer .footer-content-main {
       padding: 0 27px; }
       footer .footer-content-main .block .table-footer .table-ul li {
         display: inline-block;
-        font-size: 1.8rem; }
+        font-size: 1.8rem;
+        font-weight: 500; }
         footer .footer-content-main .block .table-footer .table-ul li span {
           display: block;
           width: 15px;
@@ -293,26 +322,30 @@ footer .footer-content-main {
     footer .footer-content-main .block .describe span {
       font-size: 1.4rem; }
     footer .footer-content-main .block .describe .green {
-      margin-right: 25px; }
+      margin-right: 25px;
+      display: block; }
     footer .footer-content-main .block .describe .details {
       display: flex;
       justify-content: flex-start;
-      margin-bottom: 10px; }
-    footer .footer-content-main .block .describe .img {
-      display: flex;
-      justify-content: center;
       align-items: center;
-      width: 15px;
-      height: 15px;
-      margin-right: 25px;
-      position: relative; }
-      footer .footer-content-main .block .describe .img:before {
-        content: ". . .";
-        position: absolute;
-        letter-spacing: -1px;
-        right: -19px;
-        top: -18%;
-        font-size: 1.4rem; }
+      margin-bottom: 10px;
+      line-height: 1.5rem; }
+      footer .footer-content-main .block .describe .details .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15px;
+        margin-right: 25px;
+        position: relative; }
+        footer .footer-content-main .block .describe .details .img:before {
+          content: ". . .";
+          position: absolute;
+          letter-spacing: -1px;
+          right: -19px;
+          top: -3px;
+          font-size: 1.4rem; }
+    footer .footer-content-main .block .describe .details:last-of-type {
+      line-height: 1rem; }
 
 footer .footer-link {
   display: flex;
