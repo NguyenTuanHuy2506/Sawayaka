@@ -1,0 +1,531 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none !important;
+  transition: 0.3s ease-in-out; }
+  a:hover {
+    opacity: 0.8; }
+
+ul {
+  list-style: none; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+  font-size: 62.5%;
+  color: #555555;
+  background-image: url(../images/common/img-background.png);
+  background-size: cover; }
+  @media screen and (max-width: 1024px) {
+    body .container {
+      padding: 0 20px; } }
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 1.4rem; } }
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background-color: #f5f5f5; }
+  body::-webkit-scrollbar {
+    width: 3px;
+    background-color: #f5f5f5; }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #555; }
+
+header span {
+  line-height: 1rem !important; }
+
+footer .x {
+  width: 15px;
+  height: 15px; }
+
+footer img {
+  display: block !important; }
+
+footer span {
+  display: block !important; }
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: auto; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400; }
+
+@supports (-ms-ime-align: auto) {
+  body > main {
+    overflow: hidden; } }
+
+header.active {
+  background-color: rgba(255, 255, 255, 0.9); }
+  header.active .header-content {
+    padding: 5px 0; }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 888;
+  top: 0;
+  transition: 0.3s ease-in-out; }
+  header .header-content {
+    transition: 0.3s ease-in-out;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap; }
+  header .menu-burger {
+    display: none; }
+  header .logo h1 a {
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #555555;
+    display: flex;
+    align-items: center; }
+  header .menu-header .main-menu-header {
+    display: flex;
+    align-items: center; }
+    header .menu-header .main-menu-header li {
+      display: inline-block;
+      margin-left: 40px; }
+      header .menu-header .main-menu-header li a {
+        font-size: 1.4rem;
+        color: #555555;
+        font-weight: bold;
+        padding: 20px 0; }
+      header .menu-header .main-menu-header li .active {
+        color: #71bb48; }
+    header .menu-header .main-menu-header li.phone {
+      display: none; }
+      header .menu-header .main-menu-header li.phone .number {
+        font-size: 1.4rem;
+        color: #71bb48; }
+    header .menu-header .main-menu-header .contact a {
+      border-radius: 40px;
+      width: 140px;
+      height: 36px;
+      background-color: #71bb48;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: 500;
+      padding: 20px 0; }
+    header .menu-header .main-menu-header .dropdown-menu {
+      position: relative; }
+      header .menu-header .main-menu-header .dropdown-menu .dropdown-ul {
+        position: absolute;
+        width: 175px;
+        height: 280px;
+        background-color: rgba(255, 255, 255, 0.8);
+        top: 30px;
+        left: -100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        display: none; }
+        header .menu-header .main-menu-header .dropdown-menu .dropdown-ul li {
+          padding: 12px;
+          margin-left: 0;
+          display: block;
+          text-align: center; }
+          header .menu-header .main-menu-header .dropdown-menu .dropdown-ul li:hover a {
+            color: #71bb48; }
+      header .menu-header .main-menu-header .dropdown-menu:hover .dropdown-ul {
+        display: flex; }
+
+.top-title {
+  margin-top: 140px;
+  margin-bottom: 60px; }
+  .top-title .title {
+    color: #b6d69e;
+    font-family: "Vollkorn", serif;
+    font-size: 8.2rem;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+    margin: 32px 0 33px 0;
+    letter-spacing: 8px; }
+    .top-title .title span {
+      font-style: normal;
+      margin-top: -32px;
+      color: #555555;
+      font-size: 2.4rem;
+      font-weight: bold;
+      display: block;
+      letter-spacing: 2px;
+      font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif; }
+  .top-title .break-cumb-title li {
+    display: inline-block;
+    padding: 0 15px;
+    border-right: 1px solid #d7d7d6; }
+    .top-title .break-cumb-title li a {
+      display: block;
+      color: #d7d7d6;
+      font-size: 1.2rem; }
+    .top-title .break-cumb-title li a.active {
+      color: #555555;
+      display: block; }
+  .top-title .break-cumb-title li:last-of-type {
+    border-color: transparent; }
+
+footer .green {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #71bb48; }
+
+footer .triangle {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 8px solid #f8b751; }
+
+footer .x {
+  width: 9px;
+  height: 9px;
+  position: relative; }
+  footer .x span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(45deg);
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    background-color: #555555; }
+  footer .x span:first-of-type {
+    transform: rotate(135deg); }
+
+footer .logo-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 45px; }
+  footer .logo-footer .details {
+    padding-left: 20px;
+    padding-top: 18px; }
+  footer .logo-footer .small {
+    font-size: 1.2rem;
+    display: block !important;
+    margin-bottom: 15px;
+    line-height: 1; }
+  footer .logo-footer .big {
+    font-size: 2.4rem;
+    text-indent: -5px;
+    font-weight: bold;
+    line-height: 1;
+    display: block !important; }
+
+footer .d-foot-phone-res {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; }
+
+footer .reservation {
+  font-size: 1.6rem;
+  font-weight: bold; }
+
+footer .phone {
+  font-size: 4.2rem;
+  color: #71bb48;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px; }
+
+footer .address {
+  margin-top: 35px;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.4rem; }
+
+footer .fax {
+  display: block;
+  margin-bottom: 48px;
+  font-size: 1.4rem; }
+
+footer .access {
+  width: 240px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: white;
+  color: #71bb48;
+  font-size: 1.6rem; }
+
+footer .footer-content {
+  padding: 75px 0 60px 0;
+  background-color: #e9ece5; }
+
+footer .footer-content-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  footer .footer-content-main .daily {
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    font-size: 1.6rem; }
+  footer .footer-content-main .block .table-footer {
+    margin-top: 18px;
+    width: 550px;
+    border: 1px solid #cccccc;
+    border-collapse: collapse; }
+    footer .footer-content-main .block .table-footer .table-ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 27px; }
+      footer .footer-content-main .block .table-footer .table-ul li {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 500; }
+        footer .footer-content-main .block .table-footer .table-ul li span {
+          display: block;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #71bb48; }
+    footer .footer-content-main .block .table-footer tr {
+      height: 80px;
+      font-size: 1.8rem; }
+      footer .footer-content-main .block .table-footer tr td {
+        vertical-align: middle;
+        background-color: white;
+        padding: 0;
+        text-align: center;
+        border: 1px solid #cccccc; }
+      footer .footer-content-main .block .table-footer tr th {
+        background-color: #f4f4f2;
+        vertical-align: middle;
+        border: 1px solid #cccccc; }
+      footer .footer-content-main .block .table-footer tr th:first-of-type {
+        width: 210px; }
+    footer .footer-content-main .block .table-footer tr:first-of-type {
+      height: 60px; }
+  footer .footer-content-main .block .describe {
+    margin-top: 24px; }
+    footer .footer-content-main .block .describe span {
+      font-size: 1.4rem; }
+    footer .footer-content-main .block .describe .green {
+      margin-right: 25px;
+      display: block; }
+    footer .footer-content-main .block .describe .details {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+      line-height: 1.5rem; }
+      footer .footer-content-main .block .describe .details .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15px;
+        margin-right: 25px;
+        position: relative; }
+        footer .footer-content-main .block .describe .details .img:before {
+          content: ". . .";
+          position: absolute;
+          letter-spacing: -1px;
+          right: -19px;
+          top: -3px;
+          font-size: 1.4rem; }
+    footer .footer-content-main .block .describe .details:last-of-type {
+      line-height: 1rem; }
+
+footer .footer-link {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 0 70px 0; }
+  footer .footer-link .content {
+    position: relative; }
+    footer .footer-link .content img {
+      max-width: 360px;
+      width: 100%;
+      border-radius: 10px; }
+    footer .footer-link .content span {
+      color: #333333;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 30px;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 2px; }
+    footer .footer-link .content .wht {
+      color: white; }
+
+footer .footer-info {
+  border-top: 1px solid #cccccc;
+  padding: 40px 0; }
+  footer .footer-info .main-content {
+    display: flex;
+    justify-content: space-between; }
+    footer .footer-info .main-content span {
+      font-size: 1.4rem; }
+
+#backTop {
+  cursor: pointer;
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #eff2ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out; }
+  #backTop span {
+    transform: rotate(45deg);
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid #71bb48;
+    border-left: 3px solid #71bb48;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out; }
+  #backTop:hover {
+    background-color: #71bb48; }
+    #backTop:hover span {
+      border-color: white; }
+
+@media screen and (max-width: 768px) {
+  #backTop {
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 100px; }
+    #backTop span {
+      margin-top: 8px;
+      width: 15px;
+      height: 15px; }
+  header .container {
+    padding: 0 20px; }
+  header .header-content {
+    padding: 5px 0; }
+  header .menu-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    width: 100vw;
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header .menu-header .main-menu-header {
+      display: block; }
+      header .menu-header .main-menu-header li {
+        display: block;
+        margin: 30px auto;
+        text-align: center; }
+        header .menu-header .main-menu-header li a {
+          text-align: center; }
+      header .menu-header .main-menu-header li.contact a {
+        margin: auto; }
+      header .menu-header .main-menu-header li.phone {
+        display: block; }
+      header .menu-header .main-menu-header .dropdown-menu:hover .dropdown-ul {
+        display: none; }
+  header .menu-header.active {
+    height: 100vh; }
+  header .menu-burger .menu {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 1050; }
+    header .menu-burger .menu span {
+      width: 100%;
+      height: 1.5px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      background-color: #71bb48;
+      transition: 0.3s ease-in-out; }
+    header .menu-burger .menu span:first-of-type {
+      transform: translateY(-15px); }
+    header .menu-burger .menu span:last-of-type {
+      transform: translateY(15px); }
+  header .menu-burger .menu.active span {
+    transform: rotate(45deg) translateY(0); }
+  header .menu-burger .menu.active span:first-of-type {
+    transform: rotate(135deg); }
+  header .menu-burger {
+    display: block; }
+  .top-title {
+    margin-bottom: 30px; }
+    .top-title .break-cumb-title {
+      margin: 20px 0; }
+      .top-title .break-cumb-title li {
+        margin: 6px 0; }
+  footer .footer-content-main {
+    flex-wrap: wrap;
+    justify-content: center; }
+  footer .access {
+    margin-bottom: 20px; }
+  footer .footer-link {
+    flex-wrap: wrap; }
+    footer .footer-link .content {
+      margin: auto;
+      margin-bottom: 20px; }
+  footer .footer-info {
+    padding: 20px 0; } }
+
+@media screen and (max-width: 576px) {
+  header .logo a img {
+    width: 40px; }
+  header .logo a span {
+    font-size: 1.8rem;
+    margin-left: -10px; }
+  .top-title .title {
+    font-size: 5rem; }
+    .top-title .title span {
+      margin-top: -21px;
+      font-size: 1.8rem; }
+  footer .address {
+    line-height: 25px; }
+  footer .phone {
+    font-size: 3.2rem;
+    letter-spacing: 0; }
+  footer .footer-content-main .main-table {
+    width: 280px;
+    overflow-x: auto;
+    margin: auto; }
+  footer .footer-content-main .block .describe span {
+    font-size: 1.3rem; }
+  footer .footer-info .main-content {
+    flex-wrap: wrap; }
+    footer .footer-info .main-content span {
+      padding: 5px 0;
+      line-height: 25px; }
+  footer .logo-footer .details {
+    padding-left: 10px; }
+  footer .logo-footer .small {
+    line-height: 25px; }
+  footer .logo-footer .big {
+    font-size: 1.8rem; } }

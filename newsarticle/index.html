@@ -16,10 +16,6 @@
     <meta name="description" content="">
     <link rel="icon" href="../images/common/icon_icon.png">
     <link href="../assets/css/reset.min.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap-adjust.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,500;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Vollkorn:ital,wght@0,500;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
@@ -131,11 +127,11 @@
     <main class="main">
         <!-- build:content -->
         <section class="top-title">
+            <h2 class="title">
+                NEWS
+                <span>お知らせ</span>
+            </h2>
             <div class="container">
-                <h2 class="title">
-                    NEWS
-                    <span>お知らせ</span>
-                </h2>
                 <div class="break-cumb-title">
                     <ul>
                         <li>
@@ -164,40 +160,50 @@
                         <span class="title">
                             ここにテキストが入ります。ここにテキストが入ります。※タイトルです。
                         </span>
-                            <span class="num">0000.00.00</span>
-                            <div class="img">
-                                <img src="../images/news/img-news-1.png" alt="">
-                            </div>
+                        <span class="num">0000.00.00</span>
+                        <div class="img">
+                            <img src="../images/news/img-news-1.png" alt="">
+                        </div>
                     </div>
                     <div class="content-2">
                         <span class="title">
                             最新記事
                         </span>
+                        <ul>
+                            <li>
+                                <a href="#link" class="text">
+                                    <p>ここにテキストが入ります。ここにテキ…が入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </a>
+                            </li>
                             <ul>
                                 <li>
-                                    <a href="#link" class="text">∟ ここにテキストが入ります。ここにテキ…</a>
+                                    <a href="#link" class="text">
+                                        <p>ここにテキストが入ります。ここにテキ…が入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                    </a>
                                 </li>
-                                <ul>
-                                    <li>
-                                        <a href="#link" class="text">∟ ここにテキストが入ります。ここにテキ…</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#link" class="text">∟ ここにテキストが入ります。ここにテキ…</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#link" class="text">∟ ここにテキストが入ります。ここにテキ…</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#link" class="text">∟ ここにテキストが入ります。ここにテキ…</a>
-                                    </li>
-                                </ul>
                             </ul>
+                            <ul>
+                                <li>
+                                    <a href="#link" class="text">
+                                        <p>ここにテキストが入ります。ここにテキ…が入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#link" class="text">
+                                        <p>ここにテキストが入ります。ここにテキ…が入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#link" class="text">
+                                        <p>ここにテキストが入ります。ここにテキ…が入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -255,8 +261,10 @@
                                 <span class="big">さわやか歯科クリニック</span>
                             </div>
                         </div>
-                        <span class="phone">045-791-7571</span>
-                        <span class="reservation">（ご予約）</span>
+                        <div class="d-foot-phone-res">
+                            <span class="phone">045-791-7571</span>
+                            <span class="reservation">（ご予約）</span>
+                        </div>
                         <span class="address">
                             〒236-0005 神奈川県横浜市金沢区並木2-3-3-103
                         </span>
@@ -294,7 +302,7 @@
                                             <li><span></span></li>
                                             <li><span></span></li>
                                             <li><span></span></li>
-                                            <li><img src="../images/common/icon-x.png" alt=""></li>
+                                            <li class="x"><img src="../images/common/icon-x.png" alt=""></li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -308,7 +316,7 @@
                                             <li><span></span></li>
                                             <li><span></span></li>
                                             <li><img src="../images/common/icon-triangle.png" alt=""></li>
-                                            <li><img src="../images/common/icon-x.png" alt=""></li>
+                                            <li class="x"><img src="../images/common/icon-x.png" alt=""></li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -366,8 +374,6 @@
         <span class="backTop"></span>
     </div>
     <script src="../assets/js/jquery-2.2.4.min.js"></script>
-    <script src="../assets/js/fontawesome.min.js"></script>
-    <script src="../assets/plugins/slick/slick.min.js"></script>
     <script src="../js/general.js"></script>
     <!-- build:addJs -->
 </body>

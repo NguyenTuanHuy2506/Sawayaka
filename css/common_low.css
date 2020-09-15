@@ -14,11 +14,7 @@
   color: inherit;
 }
 
-.top-title .title span {
-  line-height: 1.1;
-}
-
-button {
+.main button {
   outline: none;
   font-family: inherit !important;
   font-size: inherit !important;
