@@ -22,19 +22,17 @@ html {
 }
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+}
 
 body {
-<<<<<<< HEAD
   font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
     "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN",
     "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
-=======
-  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
->>>>>>> 1992828ce900943b47d728130fe141d6b78c3e34
   font-size: 62.5%;
   color: #555555;
   background-image: url(../images/common/img-background.png);
@@ -83,17 +81,21 @@ footer span {
 }
 
 header span {
-  line-height: 1rem !important; }
+  line-height: 1rem !important;
+}
 
 footer .x {
   width: 15px;
-  height: 15px; }
+  height: 15px;
+}
 
 footer img {
-  display: block !important; }
+  display: block !important;
+}
 
 footer span {
-  display: block !important; }
+  display: block !important;
+}
 
 .container {
   max-width: 1120px;
@@ -128,7 +130,6 @@ header {
   width: 100%;
   z-index: 888;
   top: 0;
-<<<<<<< HEAD
   transition: 0.3s ease-in-out;
 }
 header .header-content {
@@ -261,115 +262,6 @@ header .menu-header .main-menu-header .dropdown-menu:hover .dropdown-ul {
 .top-title .break-cumb-title li:last-of-type {
   border-color: transparent;
 }
-=======
-  transition: 0.3s ease-in-out; }
-  header .header-content {
-    transition: 0.3s ease-in-out;
-    padding: 25px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    width: 100%;
-    flex-wrap: wrap; }
-  header .menu-burger {
-    display: none; }
-  header .logo h1 a {
-    font-weight: bold;
-    font-size: 2.4rem;
-    color: #555555;
-    display: flex;
-    align-items: center; }
-  header .menu-header .main-menu-header {
-    display: flex;
-    align-items: center; }
-    header .menu-header .main-menu-header li {
-      display: inline-block;
-      margin-left: 40px; }
-      header .menu-header .main-menu-header li a {
-        font-size: 1.4rem;
-        color: #555555;
-        font-weight: bold;
-        padding: 20px 0; }
-      header .menu-header .main-menu-header li .active {
-        color: #71bb48; }
-    header .menu-header .main-menu-header li.phone {
-      display: none; }
-      header .menu-header .main-menu-header li.phone .number {
-        font-size: 1.4rem;
-        color: #71bb48; }
-    header .menu-header .main-menu-header .contact a {
-      border-radius: 40px;
-      width: 140px;
-      height: 36px;
-      background-color: #71bb48;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-weight: 500;
-      padding: 20px 0; }
-    header .menu-header .main-menu-header .dropdown-menu {
-      position: relative; }
-      header .menu-header .main-menu-header .dropdown-menu .dropdown-ul {
-        position: absolute;
-        width: 175px;
-        height: 280px;
-        background-color: rgba(255, 255, 255, 0.8);
-        top: 30px;
-        left: -100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        display: none; }
-        header .menu-header .main-menu-header .dropdown-menu .dropdown-ul li {
-          padding: 12px;
-          margin-left: 0;
-          display: block;
-          text-align: center; }
-          header .menu-header .main-menu-header .dropdown-menu .dropdown-ul li:hover a {
-            color: #71bb48; }
-      header .menu-header .main-menu-header .dropdown-menu:hover .dropdown-ul {
-        display: flex; }
-
-.top-title {
-  margin-top: 140px;
-  margin-bottom: 60px; }
-  .top-title .title {
-    color: #b6d69e;
-    font-family: "Vollkorn", serif;
-    font-size: 8.2rem;
-    font-weight: 400;
-    text-align: center;
-    font-style: italic;
-    margin: 32px 0 33px 0;
-    letter-spacing: 8px; }
-    .top-title .title span {
-      font-style: normal;
-      margin-top: -32px;
-      color: #555555;
-      font-size: 2.4rem;
-      font-weight: bold;
-      display: block;
-      letter-spacing: 2px;
-      font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif; }
-  .top-title .break-cumb-title li {
-    height: 16px;
-    line-height: 1.6rem;
-    display: inline-block;
-    padding: 0 15px;
-    border-right: 1px solid #d7d7d6; }
-    .top-title .break-cumb-title li a {
-      display: block;
-      color: #d7d7d6;
-      font-size: 1.2rem; }
-    .top-title .break-cumb-title li a.active {
-      color: #555555;
-      display: block; }
-  .top-title .break-cumb-title li:last-of-type {
-    border-color: transparent; }
->>>>>>> 1992828ce900943b47d728130fe141d6b78c3e34
 
 footer .green {
   display: inline-block;
@@ -408,7 +300,6 @@ footer .logo-footer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-<<<<<<< HEAD
   margin-bottom: 45px;
 }
 footer .logo-footer .details {
@@ -428,33 +319,12 @@ footer .logo-footer .big {
   line-height: 1;
   display: block !important;
 }
-=======
-  margin-bottom: 45px; }
-  footer .logo-footer .details {
-    padding-left: 20px;
-    padding-top: 18px; }
-  footer .logo-footer .small {
-    font-size: 1.2rem;
-    display: block !important;
-    margin-bottom: 15px;
-    line-height: 1; }
-  footer .logo-footer .big {
-    font-size: 2.4rem;
-    text-indent: -5px;
-    font-weight: bold;
-    line-height: 1;
-    display: block !important; }
->>>>>>> 1992828ce900943b47d728130fe141d6b78c3e34
 
 footer .d-foot-phone-res {
   display: flex;
   justify-content: space-between;
-<<<<<<< HEAD
   align-items: baseline;
 }
-=======
-  align-items: baseline; }
->>>>>>> 1992828ce900943b47d728130fe141d6b78c3e34
 
 footer .reservation {
   font-size: 1.6rem;
@@ -502,7 +372,6 @@ footer .footer-content {
 footer .footer-content-main {
   display: flex;
   justify-content: space-between;
-<<<<<<< HEAD
   flex-wrap: wrap;
 }
 footer .footer-content-main .daily {
@@ -593,80 +462,6 @@ footer .footer-content-main .block .describe .details .img:before {
 footer .footer-content-main .block .describe .details:last-of-type {
   line-height: 1rem;
 }
-=======
-  flex-wrap: wrap; }
-  footer .footer-content-main .daily {
-    font-weight: bold;
-    margin-top: 20px;
-    display: block;
-    font-size: 1.6rem; }
-  footer .footer-content-main .block .table-footer {
-    margin-top: 18px;
-    width: 550px;
-    border: 1px solid #cccccc;
-    border-collapse: collapse; }
-    footer .footer-content-main .block .table-footer .table-ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 27px; }
-      footer .footer-content-main .block .table-footer .table-ul li {
-        display: inline-block;
-        font-size: 1.8rem;
-        font-weight: 500; }
-        footer .footer-content-main .block .table-footer .table-ul li span {
-          display: block;
-          width: 15px;
-          height: 15px;
-          border-radius: 50%;
-          background-color: #71bb48; }
-    footer .footer-content-main .block .table-footer tr {
-      height: 80px;
-      font-size: 1.8rem; }
-      footer .footer-content-main .block .table-footer tr td {
-        vertical-align: middle;
-        background-color: white;
-        padding: 0;
-        text-align: center;
-        border: 1px solid #cccccc; }
-      footer .footer-content-main .block .table-footer tr th {
-        background-color: #f4f4f2;
-        vertical-align: middle;
-        border: 1px solid #cccccc; }
-      footer .footer-content-main .block .table-footer tr th:first-of-type {
-        width: 210px; }
-    footer .footer-content-main .block .table-footer tr:first-of-type {
-      height: 60px; }
-  footer .footer-content-main .block .describe {
-    margin-top: 24px; }
-    footer .footer-content-main .block .describe span {
-      font-size: 1.4rem; }
-    footer .footer-content-main .block .describe .green {
-      margin-right: 25px;
-      display: block; }
-    footer .footer-content-main .block .describe .details {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-bottom: 10px;
-      line-height: 1.5rem; }
-      footer .footer-content-main .block .describe .details .img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 15px;
-        margin-right: 25px;
-        position: relative; }
-        footer .footer-content-main .block .describe .details .img:before {
-          content: ". . .";
-          position: absolute;
-          letter-spacing: -1px;
-          right: -19px;
-          top: -3px;
-          font-size: 1.4rem; }
-    footer .footer-content-main .block .describe .details:last-of-type {
-      line-height: 1rem; }
->>>>>>> 1992828ce900943b47d728130fe141d6b78c3e34
 
 footer .footer-link {
   display: flex;
